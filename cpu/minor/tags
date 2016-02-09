@@ -1,0 +1,910 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddrRangeCoverage	lsq.hh	/^    enum AddrRangeCoverage$/;"	g	class:Minor::LSQ
+BadlyPredictedBranch	pipe_data.hh	/^        BadlyPredictedBranch,$/;"	e	enum:Minor::BranchData::Reason
+BadlyPredictedBranchTarget	pipe_data.hh	/^        BadlyPredictedBranchTarget,$/;"	e	enum:Minor::BranchData::Reason
+BarrierDataRequest	lsq.hh	/^        BarrierDataRequest(LSQ &port_, MinorDynInstPtr inst_) :$/;"	f	class:Minor::LSQ::BarrierDataRequest
+BarrierDataRequest	lsq.hh	/^    class BarrierDataRequest : public SpecialDataRequest$/;"	c	class:Minor::LSQ
+BranchData	pipe_data.hh	/^    BranchData($/;"	f	class:Minor::BranchData
+BranchData	pipe_data.hh	/^    BranchData() :$/;"	f	class:Minor::BranchData
+BranchData	pipe_data.hh	/^class BranchData \/* : public ReportIF, public BubbleIF *\/$/;"	c	namespace:Minor
+BranchPrediction	pipe_data.hh	/^        BranchPrediction,$/;"	e	enum:Minor::BranchData::Reason
+BubbleIF	buffers.hh	/^class BubbleIF$/;"	c	namespace:Minor
+BubbleTraitsAdaptor	buffers.hh	/^class BubbleTraitsAdaptor$/;"	c	namespace:Minor
+BubbleTraitsPtrAdaptor	buffers.hh	/^class BubbleTraitsPtrAdaptor$/;"	c	namespace:Minor
+Buffer	buffers.hh	/^    typedef MinorBuffer<Data> Buffer;$/;"	t	class:Minor::Latch
+CPUStageId	pipeline.hh	/^        CPUStageId = 0,$/;"	e	enum:Minor::Pipeline::StageId
+Complete	fetch1.hh	/^            Complete \/* Complete.  Either a fault, or a fetched line *\/$/;"	e	enum:Minor::Fetch1::FetchRequest::FetchRequestState
+Complete	lsq.hh	/^            Complete$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+CorrectlyPredictedBranch	pipe_data.hh	/^        CorrectlyPredictedBranch,$/;"	e	enum:Minor::BranchData::Reason
+DcachePort	lsq.hh	/^        DcachePort(std::string name, LSQ &lsq_, MinorCPU &cpu) :$/;"	f	class:Minor::LSQ::DcachePort
+DcachePort	lsq.hh	/^    class DcachePort : public MinorCPU::MinorCPUPort$/;"	c	class:Minor::LSQ
+Decode	decode.cc	/^Decode::Decode(const std::string &name,$/;"	f	class:Minor::Decode
+Decode	decode.hh	/^class Decode : public Named$/;"	c	namespace:Minor
+DecodeStageId	pipeline.hh	/^        Fetch1StageId, Fetch2StageId, DecodeStageId, ExecuteStageId,$/;"	e	enum:Minor::Pipeline::StageId
+DrainAllInsts	execute.hh	/^        DrainAllInsts \/* Discarding all remaining insts *\/$/;"	e	enum:Minor::Execute::DrainState
+DrainCurrentInst	execute.hh	/^        DrainCurrentInst, \/* Draining to end of inst\/macroop *\/$/;"	e	enum:Minor::Execute::DrainState
+DrainHaltFetch	execute.hh	/^        DrainHaltFetch, \/* Halting Fetch after completing current inst *\/$/;"	e	enum:Minor::Execute::DrainState
+DrainState	execute.hh	/^    enum DrainState$/;"	g	class:Minor::Execute
+ExecContext	exec_context.hh	/^    ExecContext ($/;"	f	class:Minor::ExecContext
+ExecContext	exec_context.hh	/^class ExecContext : public ::ExecContext$/;"	c	namespace:Minor
+Execute	execute.cc	/^Execute::Execute(const std::string &name_,$/;"	f	class:Minor::Execute
+Execute	execute.hh	/^class Execute : public Named$/;"	c	namespace:Minor
+ExecuteStageId	pipeline.hh	/^        Fetch1StageId, Fetch2StageId, DecodeStageId, ExecuteStageId,$/;"	e	enum:Minor::Pipeline::StageId
+FUPipeline	func_unit.cc	/^FUPipeline::FUPipeline(const std::string &name, const MinorFU &description_,$/;"	f	class:Minor::FUPipeline
+FUPipeline	func_unit.hh	/^class FUPipeline : public FUPipelineBase, public FuncUnit$/;"	c	namespace:Minor
+FUPipelineBase	func_unit.hh	/^    ReportTraitsAdaptor<QueuedInst> > FUPipelineBase;$/;"	t	namespace:Minor
+Failed	lsq.hh	/^            Failed, \/* The starting start of FailedDataRequests *\/$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+FailedDataRequest	lsq.hh	/^        FailedDataRequest(LSQ &port_, MinorDynInstPtr inst_) :$/;"	f	class:Minor::LSQ::FailedDataRequest
+FailedDataRequest	lsq.hh	/^    class FailedDataRequest : public SpecialDataRequest$/;"	c	class:Minor::LSQ
+Fetch1	fetch1.cc	/^Fetch1::Fetch1(const std::string &name_,$/;"	f	class:Minor::Fetch1
+Fetch1	fetch1.hh	/^class Fetch1 : public Named$/;"	c	namespace:Minor
+Fetch1StageId	pipeline.hh	/^        Fetch1StageId, Fetch2StageId, DecodeStageId, ExecuteStageId,$/;"	e	enum:Minor::Pipeline::StageId
+Fetch2	fetch2.cc	/^Fetch2::Fetch2(const std::string &name,$/;"	f	class:Minor::Fetch2
+Fetch2	fetch2.hh	/^class Fetch2 : public Named$/;"	c	namespace:Minor
+Fetch2StageId	pipeline.hh	/^        Fetch1StageId, Fetch2StageId, DecodeStageId, ExecuteStageId,$/;"	e	enum:Minor::Pipeline::StageId
+FetchHalted	fetch1.hh	/^        FetchHalted, \/* Not fetching, waiting to be woken by transition$/;"	e	enum:Minor::Fetch1::FetchState
+FetchQueue	fetch1.hh	/^        FetchQueue;$/;"	t	class:Minor::Fetch1
+FetchRequest	fetch1.hh	/^        FetchRequest(Fetch1 &fetch_, InstId id_, TheISA::PCState pc_) :$/;"	f	class:Minor::Fetch1::FetchRequest
+FetchRequest	fetch1.hh	/^    class FetchRequest :$/;"	c	class:Minor::Fetch1
+FetchRequestPtr	fetch1.hh	/^    typedef FetchRequest *FetchRequestPtr;$/;"	t	class:Minor::Fetch1
+FetchRequestState	fetch1.hh	/^        enum FetchRequestState$/;"	g	class:Minor::Fetch1::FetchRequest
+FetchRunning	fetch1.hh	/^        FetchRunning \/* Try to fetch, when possible *\/$/;"	e	enum:Minor::Fetch1::FetchState
+FetchState	fetch1.hh	/^    enum FetchState$/;"	g	class:Minor::Fetch1
+FetchWaitingForPC	fetch1.hh	/^        FetchWaitingForPC, \/* Not fetching, waiting for stream change.$/;"	e	enum:Minor::Fetch1::FetchState
+ForwardInstData	pipe_data.cc	/^ForwardInstData::ForwardInstData(const ForwardInstData &src)$/;"	f	class:Minor::ForwardInstData
+ForwardInstData	pipe_data.cc	/^ForwardInstData::ForwardInstData(unsigned int width) :$/;"	f	class:Minor::ForwardInstData
+ForwardInstData	pipe_data.hh	/^class ForwardInstData \/* : public ReportIF, public BubbleIF *\/$/;"	c	namespace:Minor
+ForwardLineData	pipe_data.hh	/^    ForwardLineData() :$/;"	f	class:Minor::ForwardLineData
+ForwardLineData	pipe_data.hh	/^class ForwardLineData \/* : public ReportIF, public BubbleIF *\/$/;"	c	namespace:Minor
+FullAddrRangeCoverage	lsq.hh	/^        FullAddrRangeCoverage, \/* One range fully covers another *\/$/;"	e	enum:Minor::LSQ::AddrRangeCoverage
+HaltFetch	pipe_data.hh	/^        HaltFetch$/;"	e	enum:Minor::BranchData::Reason
+IcacheNeedsRetry	fetch1.hh	/^        IcacheNeedsRetry \/* Request rejected, will be asked to retry *\/$/;"	e	enum:Minor::Fetch1::IcacheState
+IcachePort	fetch1.hh	/^        IcachePort(std::string name, Fetch1 &fetch_, MinorCPU &cpu) :$/;"	f	class:Minor::Fetch1::IcachePort
+IcachePort	fetch1.hh	/^    class IcachePort : public MinorCPU::MinorCPUPort$/;"	c	class:Minor::Fetch1
+IcacheRunning	fetch1.hh	/^        IcacheRunning, \/* Default. Step icache queues when possible *\/$/;"	e	enum:Minor::Fetch1::IcacheState
+IcacheState	fetch1.hh	/^    enum IcacheState$/;"	g	class:Minor::Fetch1
+InTranslation	fetch1.hh	/^            InTranslation, \/* Issued to ITLB, must wait for reqply *\/$/;"	e	enum:Minor::Fetch1::FetchRequest::FetchRequestState
+InTranslation	lsq.hh	/^            InTranslation, \/* TLB accessed, no reply yet *\/$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+Index	scoreboard.hh	/^    typedef unsigned short int Index;$/;"	t	class:Minor::Scoreboard
+Input	buffers.hh	/^        Input(typename Buffer::wire input_wire) :$/;"	f	class:Minor::Latch::Input
+Input	buffers.hh	/^    class Input$/;"	c	class:Minor::Latch
+InputBuffer	buffers.hh	/^    InputBuffer(const std::string &name, const std::string &data_name,$/;"	f	class:Minor::InputBuffer
+InputBuffer	buffers.hh	/^class InputBuffer : public Reservable$/;"	c	namespace:Minor
+InstId	dyn_inst.hh	/^    InstId($/;"	f	class:Minor::InstId
+InstId	dyn_inst.hh	/^class InstId$/;"	c	namespace:Minor
+Interrupt	pipe_data.hh	/^        Interrupt,$/;"	e	enum:Minor::BranchData::Reason
+LSQ	lsq.cc	/^LSQ::LSQ(std::string name_, std::string dcache_port_name_,$/;"	f	class:Minor::LSQ
+LSQ	lsq.hh	/^class LSQ : public Named$/;"	c	namespace:Minor
+LSQQueue	lsq.hh	/^        LSQQueue;$/;"	t	class:Minor::LSQ
+LSQRequest	lsq.cc	/^LSQ::LSQRequest::LSQRequest(LSQ &port_, MinorDynInstPtr inst_, bool isLoad_,$/;"	f	class:Minor::LSQ::LSQRequest
+LSQRequest	lsq.hh	/^    class LSQRequest :$/;"	c	class:Minor::LSQ
+LSQRequestPtr	lsq.hh	/^    typedef LSQRequest *LSQRequestPtr;$/;"	t	class:Minor::LSQ
+LSQRequestState	lsq.hh	/^        enum LSQRequestState$/;"	g	class:Minor::LSQ::LSQRequest
+Latch	buffers.hh	/^    Latch(const std::string &name,$/;"	f	class:Minor::Latch
+Latch	buffers.hh	/^class Latch$/;"	c	namespace:Minor
+M5_ATTR_OVERRIDE	cpu.hh	/^                         ThreadID tid) const M5_ATTR_OVERRIDE;$/;"	m	class:MinorCPU
+M5_ATTR_OVERRIDE	cpu.hh	/^    DrainState drain() M5_ATTR_OVERRIDE;$/;"	m	class:MinorCPU
+M5_ATTR_OVERRIDE	cpu.hh	/^    void drainResume() M5_ATTR_OVERRIDE;$/;"	m	class:MinorCPU
+M5_ATTR_OVERRIDE	cpu.hh	/^    void unserializeThread(CheckpointIn &cp, ThreadID tid) M5_ATTR_OVERRIDE;$/;"	m	class:MinorCPU
+MAX_FORWARD_INSTS	pipe_data.hh	/^const unsigned int MAX_FORWARD_INSTS = 16;$/;"	m	namespace:Minor
+MINORINST	trace.hh	66;"	d
+MINORLINE	trace.hh	75;"	d
+MINORTRACE	trace.hh	62;"	d
+MemoryNeedsRetry	lsq.hh	/^        MemoryNeedsRetry \/* Request rejected, will be asked to retry *\/$/;"	e	enum:Minor::LSQ::MemoryState
+MemoryRunning	lsq.hh	/^        MemoryRunning, \/* Default. Step dcache queues when possible. *\/$/;"	e	enum:Minor::LSQ::MemoryState
+MemoryState	lsq.hh	/^    enum MemoryState$/;"	g	class:Minor::LSQ
+Minor	activity.cc	/^namespace Minor$/;"	n	file:
+Minor	activity.hh	/^namespace Minor$/;"	n
+Minor	buffers.hh	/^namespace Minor$/;"	n
+Minor	cpu.hh	/^namespace Minor$/;"	n
+Minor	decode.cc	/^namespace Minor$/;"	n	file:
+Minor	decode.hh	/^namespace Minor$/;"	n
+Minor	dyn_inst.cc	/^namespace Minor$/;"	n	file:
+Minor	dyn_inst.hh	/^namespace Minor$/;"	n
+Minor	exec_context.hh	/^namespace Minor$/;"	n
+Minor	execute.cc	/^namespace Minor$/;"	n	file:
+Minor	execute.hh	/^namespace Minor$/;"	n
+Minor	fetch1.cc	/^namespace Minor$/;"	n	file:
+Minor	fetch1.hh	/^namespace Minor$/;"	n
+Minor	fetch2.cc	/^namespace Minor$/;"	n	file:
+Minor	fetch2.hh	/^namespace Minor$/;"	n
+Minor	func_unit.cc	/^namespace Minor$/;"	n	file:
+Minor	func_unit.hh	/^namespace Minor$/;"	n
+Minor	lsq.cc	/^namespace Minor$/;"	n	file:
+Minor	lsq.hh	/^namespace Minor$/;"	n
+Minor	pipe_data.cc	/^namespace Minor$/;"	n	file:
+Minor	pipe_data.hh	/^namespace Minor$/;"	n
+Minor	pipeline.cc	/^namespace Minor$/;"	n	file:
+Minor	pipeline.hh	/^namespace Minor$/;"	n
+Minor	scoreboard.cc	/^namespace Minor$/;"	n	file:
+Minor	scoreboard.hh	/^namespace Minor$/;"	n
+Minor	stats.cc	/^namespace Minor$/;"	n	file:
+Minor	stats.hh	/^namespace Minor$/;"	n
+Minor	trace.hh	/^namespace Minor$/;"	n
+MinorActivityRecorder	activity.hh	/^    MinorActivityRecorder(const std::string &name, int num_stages,$/;"	f	class:Minor::MinorActivityRecorder
+MinorActivityRecorder	activity.hh	/^class MinorActivityRecorder : public ActivityRecorder$/;"	c	namespace:Minor
+MinorBuffer	buffers.hh	/^    MinorBuffer(const std::string &name,$/;"	f	class:Minor::MinorBuffer
+MinorBuffer	buffers.hh	/^class MinorBuffer : public Named, public TimeBuffer<ElemType>$/;"	c	namespace:Minor
+MinorCPU	MinorCPU.py	/^class MinorCPU(BaseCPU):$/;"	c
+MinorCPU	cpu.cc	/^MinorCPU::MinorCPU(MinorCPUParams *params) :$/;"	f	class:MinorCPU
+MinorCPU	cpu.hh	/^class MinorCPU : public BaseCPU$/;"	c
+MinorCPUPort	cpu.hh	/^        MinorCPUPort(const std::string& name_, MinorCPU &cpu_)$/;"	f	class:MinorCPU::MinorCPUPort
+MinorCPUPort	cpu.hh	/^    class MinorCPUPort : public MasterPort$/;"	c	class:MinorCPU
+MinorDefaultFUPool	MinorCPU.py	/^class MinorDefaultFUPool(MinorFUPool):$/;"	c
+MinorDefaultFloatSimdFU	MinorCPU.py	/^class MinorDefaultFloatSimdFU(MinorFU):$/;"	c
+MinorDefaultIntDivFU	MinorCPU.py	/^class MinorDefaultIntDivFU(MinorFU):$/;"	c
+MinorDefaultIntFU	MinorCPU.py	/^class MinorDefaultIntFU(MinorFU):$/;"	c
+MinorDefaultIntMulFU	MinorCPU.py	/^class MinorDefaultIntMulFU(MinorFU):$/;"	c
+MinorDefaultMemFU	MinorCPU.py	/^class MinorDefaultMemFU(MinorFU):$/;"	c
+MinorDefaultMiscFU	MinorCPU.py	/^class MinorDefaultMiscFU(MinorFU):$/;"	c
+MinorDynInst	dyn_inst.hh	/^    MinorDynInst(InstId id_ = InstId(), Fault fault_ = NoFault) :$/;"	f	class:Minor::MinorDynInst
+MinorDynInst	dyn_inst.hh	/^class MinorDynInst : public RefCounted$/;"	c	namespace:Minor
+MinorDynInstPtr	dyn_inst.hh	/^typedef RefCountingPtr<MinorDynInst> MinorDynInstPtr;$/;"	t	namespace:Minor
+MinorFU	MinorCPU.py	/^class MinorFU(SimObject):$/;"	c
+MinorFU	func_unit.hh	/^    MinorFU(const MinorFUParams *params) :$/;"	f	class:MinorFU
+MinorFU	func_unit.hh	/^class MinorFU : public SimObject$/;"	c
+MinorFUPool	MinorCPU.py	/^class MinorFUPool(SimObject):$/;"	c
+MinorFUPool	func_unit.hh	/^    MinorFUPool(const MinorFUPoolParams *params) :$/;"	f	class:MinorFUPool
+MinorFUPool	func_unit.hh	/^class MinorFUPool : public SimObject$/;"	c
+MinorFUTiming	MinorCPU.py	/^class MinorFUTiming(SimObject):$/;"	c
+MinorFUTiming	func_unit.cc	/^MinorFUTiming::MinorFUTiming($/;"	f	class:MinorFUTiming
+MinorFUTiming	func_unit.hh	/^class MinorFUTiming: public SimObject$/;"	c
+MinorOpClass	MinorCPU.py	/^class MinorOpClass(SimObject):$/;"	c
+MinorOpClass	func_unit.hh	/^    MinorOpClass(const MinorOpClassParams *params) :$/;"	f	class:MinorOpClass
+MinorOpClass	func_unit.hh	/^class MinorOpClass : public SimObject$/;"	c
+MinorOpClassSet	MinorCPU.py	/^class MinorOpClassSet(SimObject):$/;"	c
+MinorOpClassSet	func_unit.cc	/^MinorOpClassSet::MinorOpClassSet(const MinorOpClassSetParams *params) :$/;"	f	class:MinorOpClassSet
+MinorOpClassSet	func_unit.hh	/^class MinorOpClassSet : public SimObject$/;"	c
+MinorStats	stats.cc	/^MinorStats::MinorStats()$/;"	f	class:Minor::MinorStats
+MinorStats	stats.hh	/^class MinorStats$/;"	c	namespace:Minor
+MinorThread	cpu.hh	/^typedef SimpleThread MinorThread;$/;"	t	namespace:Minor
+NoAddrRangeCoverage	lsq.hh	/^        NoAddrRangeCoverage \/* Two ranges are disjoint *\/$/;"	e	enum:Minor::LSQ::AddrRangeCoverage
+NoBranch	pipe_data.hh	/^        NoBranch,$/;"	e	enum:Minor::BranchData::Reason
+NoBubbleTraits	buffers.hh	/^class NoBubbleTraits$/;"	c	namespace:Minor
+NotDraining	execute.hh	/^        NotDraining, \/* Not draining, possibly running *\/$/;"	e	enum:Minor::Execute::DrainState
+NotIssued	fetch1.hh	/^            NotIssued, \/* Just been made *\/$/;"	e	enum:Minor::Fetch1::FetchRequest::FetchRequestState
+NotIssued	lsq.hh	/^            NotIssued, \/* Newly created *\/$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+Num_StageId	pipeline.hh	/^        Num_StageId \/* Stage count *\/$/;"	e	enum:Minor::Pipeline::StageId
+Output	buffers.hh	/^        Output(typename Buffer::wire output_wire) :$/;"	f	class:Minor::Latch::Output
+Output	buffers.hh	/^    class Output$/;"	c	class:Minor::Latch
+PartialAddrRangeCoverage	lsq.hh	/^        PartialAddrRangeCoverage, \/* Two ranges partly overlap *\/$/;"	e	enum:Minor::LSQ::AddrRangeCoverage
+Pipeline	pipeline.cc	/^Pipeline::Pipeline(MinorCPU &cpu_, MinorCPUParams &params) :$/;"	f	class:Minor::Pipeline
+Pipeline	pipeline.hh	/^class Pipeline : public Ticked$/;"	c	namespace:Minor
+Queue	buffers.hh	/^    Queue(const std::string &name, const std::string &data_name,$/;"	f	class:Minor::Queue
+Queue	buffers.hh	/^class Queue : public Named, public Reservable$/;"	c	namespace:Minor
+QueuedInst	func_unit.hh	/^    QueuedInst(MinorDynInstPtr inst_ = MinorDynInst::bubble()) :$/;"	f	class:Minor::QueuedInst
+QueuedInst	func_unit.hh	/^class QueuedInst$/;"	c	namespace:Minor
+RENJU_INST	trace.hh	71;"	d
+Reason	pipe_data.hh	/^    enum Reason$/;"	g	class:Minor::BranchData
+RegIndex	scoreboard.hh	/^    typedef TheISA::RegIndex RegIndex;$/;"	t	class:Minor::Scoreboard
+ReportIF	buffers.hh	/^class ReportIF$/;"	c	namespace:Minor
+ReportTraitsAdaptor	buffers.hh	/^class ReportTraitsAdaptor$/;"	c	namespace:Minor
+ReportTraitsPtrAdaptor	buffers.hh	/^class ReportTraitsPtrAdaptor$/;"	c	namespace:Minor
+RequestIssuing	fetch1.hh	/^            RequestIssuing, \/* Issued to memory, must wait for response *\/$/;"	e	enum:Minor::Fetch1::FetchRequest::FetchRequestState
+RequestIssuing	lsq.hh	/^            RequestIssuing, \/* Load\/store issued to memory in the requests$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+RequestNeedsRetry	lsq.hh	/^            RequestNeedsRetry, \/* Retry needed for load *\/$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+Reservable	buffers.hh	/^class Reservable$/;"	c	namespace:Minor
+Scoreboard	scoreboard.hh	/^    Scoreboard(const std::string &name) :$/;"	f	class:Minor::Scoreboard
+Scoreboard	scoreboard.hh	/^class Scoreboard : public Named$/;"	c	namespace:Minor
+SelfStallingPipeline	buffers.hh	/^    SelfStallingPipeline(const std::string &name,$/;"	f	class:Minor::SelfStallingPipeline
+SelfStallingPipeline	buffers.hh	/^class SelfStallingPipeline : public MinorBuffer<ElemType, ReportTraits>$/;"	c	namespace:Minor
+SingleDataRequest	lsq.hh	/^        SingleDataRequest(LSQ &port_, MinorDynInstPtr inst_,$/;"	f	class:Minor::LSQ::SingleDataRequest
+SingleDataRequest	lsq.hh	/^    class SingleDataRequest : public LSQRequest$/;"	c	class:Minor::LSQ
+SpecialDataRequest	lsq.hh	/^        SpecialDataRequest(LSQ &port_, MinorDynInstPtr inst_) :$/;"	f	class:Minor::LSQ::SpecialDataRequest
+SpecialDataRequest	lsq.hh	/^    class SpecialDataRequest : public LSQRequest$/;"	c	class:Minor::LSQ
+SplitDataRequest	lsq.cc	/^LSQ::SplitDataRequest::SplitDataRequest(LSQ &port_, MinorDynInstPtr inst_,$/;"	f	class:Minor::LSQ::SplitDataRequest
+SplitDataRequest	lsq.hh	/^    class SplitDataRequest : public LSQRequest$/;"	c	class:Minor::LSQ
+StageId	pipeline.hh	/^    enum StageId$/;"	g	class:Minor::Pipeline
+StoreBuffer	lsq.cc	/^LSQ::StoreBuffer::StoreBuffer(std::string name_, LSQ &lsq_,$/;"	f	class:Minor::LSQ::StoreBuffer
+StoreBuffer	lsq.hh	/^    class StoreBuffer : public Named$/;"	c	class:Minor::LSQ
+StoreBufferIssuing	lsq.hh	/^            StoreBufferIssuing, \/* Store in store buffer and has been$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+StoreBufferNeedsRetry	lsq.hh	/^            StoreBufferNeedsRetry, \/* Retry needed for store *\/$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+StoreInStoreBuffer	lsq.hh	/^            StoreInStoreBuffer, \/* Store in the store buffer, before issuing$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+StoreToStoreBuffer	lsq.hh	/^            StoreToStoreBuffer, \/* Store in transfers on its way to the$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+SuspendThread	pipe_data.hh	/^        SuspendThread,$/;"	e	enum:Minor::BranchData::Reason
+Translated	fetch1.hh	/^            Translated, \/* Translation complete *\/$/;"	e	enum:Minor::Fetch1::FetchRequest::FetchRequestState
+Translated	lsq.hh	/^            Translated, \/* Finished address translation *\/$/;"	e	enum:Minor::LSQ::LSQRequest::LSQRequestState
+TranslationEvent	lsq.hh	/^            TranslationEvent(SplitDataRequest &owner_)$/;"	f	class:Minor::LSQ::SplitDataRequest::TranslationEvent
+TranslationEvent	lsq.hh	/^        class TranslationEvent : public Event$/;"	c	class:Minor::LSQ::SplitDataRequest
+UnpredictedBranch	pipe_data.hh	/^        UnpredictedBranch,$/;"	e	enum:Minor::BranchData::Reason
+WakeupFetch	pipe_data.hh	/^        WakeupFetch,$/;"	e	enum:Minor::BranchData::Reason
+__CPU_MINOR_ACTIVITY_HH__	activity.hh	48;"	d
+__CPU_MINOR_BUFFERS_HH__	buffers.hh	47;"	d
+__CPU_MINOR_CPU_HH__	cpu.hh	47;"	d
+__CPU_MINOR_DECODE_HH__	decode.hh	48;"	d
+__CPU_MINOR_DYN_INST_HH__	dyn_inst.hh	49;"	d
+__CPU_MINOR_EXECUTE_HH__	execute.hh	48;"	d
+__CPU_MINOR_EXEC_CONTEXT_HH__	exec_context.hh	54;"	d
+__CPU_MINOR_FETCH1_HH__	fetch1.hh	48;"	d
+__CPU_MINOR_FETCH2_HH__	fetch2.hh	48;"	d
+__CPU_MINOR_FUNC_UNIT_HH__	func_unit.hh	47;"	d
+__CPU_MINOR_NEW_LSQ_HH__	lsq.hh	48;"	d
+__CPU_MINOR_PIPELINE_HH__	pipeline.hh	48;"	d
+__CPU_MINOR_PIPE_DATA_HH__	pipe_data.hh	53;"	d
+__CPU_MINOR_SCOREBOARD_HH__	scoreboard.hh	47;"	d
+__CPU_MINOR_STATS_HH__	stats.hh	47;"	d
+__CPU_MINOR_TRACE_HH__	trace.hh	51;"	d
+accessesInFlight	lsq.hh	/^    bool accessesInFlight() const$/;"	f	class:Minor::LSQ
+activateContext	cpu.cc	/^MinorCPU::activateContext(ThreadID thread_id)$/;"	f	class:MinorCPU
+activityRecorder	cpu.hh	/^    Minor::MinorActivityRecorder *activityRecorder;$/;"	m	class:MinorCPU
+activityRecorder	pipeline.hh	/^    MinorActivityRecorder activityRecorder;$/;"	m	class:Minor::Pipeline
+addCheckerCpu	MinorCPU.py	/^    def addCheckerCpu(self):$/;"	m	class:MinorCPU
+addrBlockOffset	lsq.cc	/^addrBlockOffset(Addr addr, unsigned int block_size)$/;"	f	namespace:Minor
+adoptPacketData	pipe_data.cc	/^ForwardLineData::adoptPacketData(Packet *packet)$/;"	f	class:Minor::ForwardLineData
+advance	buffers.hh	/^    advance()$/;"	f	class:Minor::SelfStallingPipeline
+advance	func_unit.cc	/^FUPipeline::advance()$/;"	f	class:Minor::FUPipeline
+allocateLine	pipe_data.cc	/^ForwardLineData::allocateLine(unsigned int width_)$/;"	f	class:Minor::ForwardLineData
+allowEarlyMemIssue	execute.hh	/^    bool allowEarlyMemIssue;$/;"	m	class:Minor::Execute
+allow_idling	pipeline.hh	/^    bool allow_idling;$/;"	m	class:Minor::Pipeline
+alreadyPushed	buffers.hh	/^    bool alreadyPushed() { return !BubbleTraits::isBubble(*pushWire); }$/;"	f	class:Minor::SelfStallingPipeline
+armMonitor	exec_context.hh	/^    void armMonitor(Addr address) { getCpuPtr()->armMonitor(address); }$/;"	f	class:Minor::ExecContext
+blocked	decode.hh	/^    bool blocked;$/;"	m	class:Minor::Decode
+blocked	fetch1.hh	/^    bool blocked;$/;"	m	class:Minor::Fetch1
+blocked	fetch2.hh	/^    bool blocked;$/;"	m	class:Minor::Fetch2
+boxOpClass	MinorCPU.py	/^    def boxOpClass(op_class):$/;"	f	function:minorMakeOpClassSet
+branchInp	fetch2.hh	/^    Latch<BranchData>::Output branchInp;$/;"	m	class:Minor::Fetch2
+branchPred	MinorCPU.py	/^    branchPred = Param.BranchPredictor(TournamentBP($/;"	v	class:MinorCPU
+branchPredictor	fetch2.hh	/^    BPredUnit &branchPredictor;$/;"	m	class:Minor::Fetch2
+bubble	buffers.hh	/^    static ElemType bubble() { assert(false); }$/;"	f	class:Minor::NoBubbleTraits
+bubble	buffers.hh	/^    static ElemType bubble() { return ElemType::bubble(); }$/;"	f	class:Minor::BubbleTraitsAdaptor
+bubble	buffers.hh	/^    static PtrType bubble() { return ElemType::bubble(); }$/;"	f	class:Minor::BubbleTraitsPtrAdaptor
+bubble	dyn_inst.hh	/^    static MinorDynInstPtr bubble() { return bubbleInst; }$/;"	f	class:Minor::MinorDynInst
+bubble	func_unit.hh	/^    static QueuedInst bubble()$/;"	f	class:Minor::QueuedInst
+bubble	pipe_data.hh	/^    static BranchData bubble() { return BranchData(); }$/;"	f	class:Minor::BranchData
+bubble	pipe_data.hh	/^    static ForwardLineData bubble() { return ForwardLineData(); }$/;"	f	class:Minor::ForwardLineData
+bubbleFill	pipe_data.cc	/^ForwardInstData::bubbleFill()$/;"	f	class:Minor::ForwardInstData
+bubbleFlag	pipe_data.hh	/^    bool bubbleFlag;$/;"	m	class:Minor::ForwardLineData
+bubbleInst	dyn_inst.cc	/^MinorDynInstPtr MinorDynInst::bubbleInst = NULL;$/;"	m	class:Minor::MinorDynInst	file:
+bubbleInst	dyn_inst.hh	/^    static MinorDynInstPtr bubbleInst;$/;"	m	class:Minor::MinorDynInst
+buffer	buffers.hh	/^    Buffer buffer;$/;"	m	class:Minor::Latch
+cacheBlockMask	lsq.hh	/^    Addr cacheBlockMask;$/;"	m	class:Minor::LSQ
+canEarlyIssue	dyn_inst.hh	/^    bool canEarlyIssue;$/;"	m	class:Minor::MinorDynInst
+canForwardDataToLoad	lsq.cc	/^LSQ::StoreBuffer::canForwardDataToLoad(LSQRequestPtr request,$/;"	f	class:Minor::LSQ::StoreBuffer
+canInsert	func_unit.cc	/^FUPipeline::canInsert() const$/;"	f	class:Minor::FUPipeline
+canInsert	lsq.cc	/^LSQ::StoreBuffer::canInsert() const$/;"	f	class:Minor::LSQ::StoreBuffer
+canInstIssue	scoreboard.cc	/^Scoreboard::canInstIssue(MinorDynInstPtr inst,$/;"	f	class:Minor::Scoreboard
+canPushIntoStoreBuffer	lsq.hh	/^    bool canPushIntoStoreBuffer() const { return storeBuffer.canInsert(); }$/;"	f	class:Minor::LSQ
+canRequest	lsq.hh	/^    bool canRequest() { return requests.unreservedRemainingSpace() != 0; }$/;"	f	class:Minor::LSQ
+canReserve	buffers.hh	/^    bool canReserve() const { return queue.canReserve(); }$/;"	f	class:Minor::InputBuffer
+canReserve	buffers.hh	/^    bool canReserve() const { return unreservedRemainingSpace() != 0; }$/;"	f	class:Minor::Queue
+canSendToMemorySystem	lsq.cc	/^LSQ::canSendToMemorySystem()$/;"	f	class:Minor::LSQ
+cantForwardFromFUIndices	MinorCPU.py	/^    cantForwardFromFUIndices = VectorParam.Unsigned([],$/;"	v	class:MinorFU
+cantForwardFromFUIndices	func_unit.hh	/^    std::vector<bool> cantForwardFromFUIndices;$/;"	m	class:Minor::FUPipeline
+cantForwardFromFUIndices	func_unit.hh	/^    std::vector<unsigned int> cantForwardFromFUIndices;$/;"	m	class:MinorFU
+capabilityList	func_unit.hh	/^    std::bitset<Num_OpClasses> capabilityList;$/;"	m	class:Minor::FUPipeline
+capabilityList	func_unit.hh	/^    std::vector<bool> capabilityList;$/;"	m	class:MinorOpClassSet
+capacity	buffers.hh	/^    unsigned int capacity;$/;"	m	class:Minor::Queue
+changeStream	fetch1.cc	/^Fetch1::changeStream(const BranchData &branch)$/;"	f	class:Minor::Fetch1
+clearInstDests	scoreboard.cc	/^Scoreboard::clearInstDests(MinorDynInstPtr inst, bool clear_unpredictable)$/;"	f	class:Minor::Scoreboard
+clearMemBarrier	lsq.cc	/^LSQ::clearMemBarrier(MinorDynInstPtr inst)$/;"	f	class:Minor::LSQ
+clearReservedSpace	buffers.hh	/^    void clearReservedSpace() { numReservedSlots = 0; }$/;"	f	class:Minor::Queue
+commit	execute.cc	/^Execute::commit(bool only_commit_microops, bool discard, BranchData &branch)$/;"	f	class:Minor::Execute
+commitInst	execute.cc	/^Execute::commitInst(MinorDynInstPtr inst, bool early_memory_issue,$/;"	f	class:Minor::Execute
+commitLimit	execute.hh	/^    unsigned int commitLimit;$/;"	m	class:Minor::Execute
+completeMemBarrierInst	lsq.cc	/^LSQ::completeMemBarrierInst(MinorDynInstPtr inst,$/;"	f	class:Minor::LSQ
+containsAddrRangeOf	lsq.cc	/^LSQ::LSQRequest::containsAddrRangeOf($/;"	f	class:Minor::LSQ::LSQRequest
+containsAddrRangeOf	lsq.cc	/^LSQ::LSQRequest::containsAddrRangeOf(LSQRequestPtr other_request)$/;"	f	class:Minor::LSQ::LSQRequest
+contextId	exec_context.hh	/^    ContextID contextId() { return thread.contextId(); }$/;"	f	class:Minor::ExecContext
+countIssuedStore	lsq.cc	/^LSQ::StoreBuffer::countIssuedStore(LSQRequestPtr request)$/;"	f	class:Minor::LSQ::StoreBuffer
+cpi	stats.hh	/^    Stats::Formula cpi;$/;"	m	class:Minor::MinorStats
+cpu	cpu.hh	/^        MinorCPU &cpu;$/;"	m	class:MinorCPU::MinorCPUPort
+cpu	decode.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::Decode
+cpu	exec_context.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::ExecContext
+cpu	execute.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::Execute
+cpu	fetch1.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::Fetch1
+cpu	fetch2.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::Fetch2
+cpu	lsq.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::LSQ
+cpu	pipeline.hh	/^    MinorCPU &cpu;$/;"	m	class:Minor::Pipeline
+create	cpu.cc	/^MinorCPUParams::create()$/;"	f	class:MinorCPUParams
+create	func_unit.cc	/^MinorFUParams::create()$/;"	f	class:MinorFUParams
+create	func_unit.cc	/^MinorFUPoolParams::create()$/;"	f	class:MinorFUPoolParams
+create	func_unit.cc	/^MinorFUTimingParams::create()$/;"	f	class:MinorFUTimingParams
+create	func_unit.cc	/^MinorOpClassParams::create()$/;"	f	class:MinorOpClassParams
+create	func_unit.cc	/^MinorOpClassSetParams::create()$/;"	f	class:MinorOpClassSetParams
+cxx_header	MinorCPU.py	/^    cxx_header = "cpu\/minor\/cpu.hh"$/;"	v	class:MinorCPU
+cxx_header	MinorCPU.py	/^    cxx_header = "cpu\/minor\/func_unit.hh"$/;"	v	class:MinorFU
+cxx_header	MinorCPU.py	/^    cxx_header = "cpu\/minor\/func_unit.hh"$/;"	v	class:MinorFUPool
+cxx_header	MinorCPU.py	/^    cxx_header = "cpu\/minor\/func_unit.hh"$/;"	v	class:MinorFUTiming
+cxx_header	MinorCPU.py	/^    cxx_header = "cpu\/minor\/func_unit.hh"$/;"	v	class:MinorOpClass
+cxx_header	MinorCPU.py	/^    cxx_header = "cpu\/minor\/func_unit.hh"$/;"	v	class:MinorOpClassSet
+cyclesBeforeInsert	func_unit.cc	/^FUPipeline::cyclesBeforeInsert()$/;"	f	class:Minor::FUPipeline
+cyclicIndexDec	execute.cc	/^cyclicIndexDec(unsigned int index, unsigned int cycle_size)$/;"	f	namespace:Minor
+cyclicIndexInc	execute.cc	/^cyclicIndexInc(unsigned int index, unsigned int cycle_size)$/;"	f	namespace:Minor
+dToE	pipeline.hh	/^    Latch<ForwardInstData> dToE;$/;"	m	class:Minor::Pipeline
+data	lsq.hh	/^        PacketDataPtr data;$/;"	m	class:Minor::LSQ::LSQRequest
+dataName	buffers.hh	/^    std::string dataName;$/;"	m	class:Minor::MinorBuffer
+dataName	buffers.hh	/^    std::string dataName;$/;"	m	class:Minor::Queue
+dbg_vtophys	cpu.cc	/^MinorCPU::dbg_vtophys(Addr addr)$/;"	f	class:MinorCPU
+dcachePort	lsq.hh	/^    DcachePort dcachePort;$/;"	m	class:Minor::LSQ
+decode	pipeline.hh	/^    Decode decode;$/;"	m	class:Minor::Pipeline
+decodeCycleInput	MinorCPU.py	/^    decodeCycleInput = Param.Bool(True,$/;"	v	class:MinorCPU
+decodeInputBufferSize	MinorCPU.py	/^    decodeInputBufferSize = Param.Unsigned(3,$/;"	v	class:MinorCPU
+decodeInputWidth	MinorCPU.py	/^    decodeInputWidth = Param.Unsigned(2,$/;"	v	class:MinorCPU
+decodeToExecuteForwardDelay	MinorCPU.py	/^    decodeToExecuteForwardDelay = Param.Cycles(1,$/;"	v	class:MinorCPU
+delay	buffers.hh	/^    Cycles delay;$/;"	m	class:Minor::Latch
+deleteRequest	lsq.cc	/^LSQ::StoreBuffer::deleteRequest(LSQRequestPtr request)$/;"	f	class:Minor::LSQ::StoreBuffer
+demapDataPage	exec_context.hh	/^    demapDataPage(Addr vaddr, uint64_t asn)$/;"	f	class:Minor::ExecContext
+demapInstPage	exec_context.hh	/^    demapInstPage(Addr vaddr, uint64_t asn)$/;"	f	class:Minor::ExecContext
+demapPage	exec_context.hh	/^    demapPage(Addr vaddr, uint64_t asn)$/;"	f	class:Minor::ExecContext
+description	MinorCPU.py	/^    description = Param.String('', "description string of the decoding\/inst."$/;"	v	class:MinorFUTiming
+description	func_unit.hh	/^    const MinorFU &description;$/;"	m	class:Minor::FUPipeline
+description	func_unit.hh	/^    std::string description;$/;"	m	class:MinorFUTiming
+doInstCommitAccounting	execute.cc	/^Execute::doInstCommitAccounting(MinorDynInstPtr inst)$/;"	f	class:Minor::Execute
+drain	cpu.cc	/^MinorCPU::drain()$/;"	f	class:MinorCPU
+drain	execute.cc	/^Execute::drain()$/;"	f	class:Minor::Execute
+drain	pipeline.cc	/^Pipeline::drain()$/;"	f	class:Minor::Pipeline
+drainResume	cpu.cc	/^MinorCPU::drainResume()$/;"	f	class:MinorCPU
+drainResume	execute.cc	/^Execute::drainResume()$/;"	f	class:Minor::Execute
+drainResume	pipeline.cc	/^Pipeline::drainResume()$/;"	f	class:Minor::Pipeline
+drainState	execute.hh	/^    DrainState drainState;$/;"	m	class:Minor::Execute
+dumpAllInput	fetch2.cc	/^Fetch2::dumpAllInput()$/;"	f	class:Minor::Fetch2
+dynInstAddTracing	decode.cc	/^dynInstAddTracing(MinorDynInstPtr inst, StaticInstPtr static_inst,$/;"	f	namespace:Minor
+eToF1	pipeline.hh	/^    Latch<BranchData> eToF1;$/;"	m	class:Minor::Pipeline
+ea	dyn_inst.hh	/^    Addr ea;$/;"	m	class:Minor::MinorDynInst
+elementPtr	buffers.hh	/^    mutable ElemType *elementPtr;$/;"	m	class:Minor::InputBuffer
+empty	buffers.hh	/^    bool empty() const { return !elementPtr && queue.empty(); }$/;"	f	class:Minor::InputBuffer
+empty	buffers.hh	/^    bool empty() const { return buffer.empty(); }$/;"	f	class:Minor::Latch
+empty	buffers.hh	/^    bool empty() const { return queue.empty(); }$/;"	f	class:Minor::Queue
+empty	buffers.hh	/^    empty() const$/;"	f	class:Minor::MinorBuffer
+enableIdling	MinorCPU.py	/^    enableIdling = Param.Bool(True,$/;"	v	class:MinorCPU
+evaluate	activity.hh	/^    void evaluate() { advance(); }$/;"	f	class:Minor::MinorActivityRecorder
+evaluate	buffers.hh	/^    void evaluate() { buffer.advance(); }$/;"	f	class:Minor::Latch
+evaluate	decode.cc	/^Decode::evaluate()$/;"	f	class:Minor::Decode
+evaluate	execute.cc	/^Execute::evaluate()$/;"	f	class:Minor::Execute
+evaluate	fetch1.cc	/^Fetch1::evaluate()$/;"	f	class:Minor::Fetch1
+evaluate	fetch2.cc	/^Fetch2::evaluate()$/;"	f	class:Minor::Fetch2
+evaluate	pipeline.cc	/^Pipeline::evaluate()$/;"	f	class:Minor::Pipeline
+execSeqNum	decode.hh	/^    InstSeqNum execSeqNum;$/;"	m	class:Minor::Decode
+execSeqNum	dyn_inst.hh	/^    InstSeqNum execSeqNum;$/;"	m	class:Minor::InstId
+execSeqNumToWaitFor	scoreboard.cc	/^Scoreboard::execSeqNumToWaitFor(MinorDynInstPtr inst,$/;"	f	class:Minor::Scoreboard
+execute	exec_context.hh	/^    Execute &execute;$/;"	m	class:Minor::ExecContext
+execute	lsq.hh	/^    Execute &execute;$/;"	m	class:Minor::LSQ
+execute	pipeline.hh	/^    Execute execute;$/;"	m	class:Minor::Pipeline
+executeAllowEarlyMemoryIssue	MinorCPU.py	/^    executeAllowEarlyMemoryIssue = Param.Bool(True,$/;"	v	class:MinorCPU
+executeBranchDelay	MinorCPU.py	/^    executeBranchDelay = Param.Cycles(1,$/;"	v	class:MinorCPU
+executeCommitLimit	MinorCPU.py	/^    executeCommitLimit = Param.Unsigned(2,$/;"	v	class:MinorCPU
+executeCycleInput	MinorCPU.py	/^    executeCycleInput = Param.Bool(True,$/;"	v	class:MinorCPU
+executeFuncUnits	MinorCPU.py	/^    executeFuncUnits = Param.MinorFUPool(MinorDefaultFUPool(),$/;"	v	class:MinorCPU
+executeInputBufferSize	MinorCPU.py	/^    executeInputBufferSize = Param.Unsigned(7,$/;"	v	class:MinorCPU
+executeInputWidth	MinorCPU.py	/^    executeInputWidth = Param.Unsigned(2,$/;"	v	class:MinorCPU
+executeIssueLimit	MinorCPU.py	/^    executeIssueLimit = Param.Unsigned(2,$/;"	v	class:MinorCPU
+executeLSQMaxStoreBufferStoresPerCycle	MinorCPU.py	/^    executeLSQMaxStoreBufferStoresPerCycle = Param.Unsigned(2,$/;"	v	class:MinorCPU
+executeLSQRequestsQueueSize	MinorCPU.py	/^    executeLSQRequestsQueueSize = Param.Unsigned(1,$/;"	v	class:MinorCPU
+executeLSQStoreBufferSize	MinorCPU.py	/^    executeLSQStoreBufferSize = Param.Unsigned(5,$/;"	v	class:MinorCPU
+executeLSQTransfersQueueSize	MinorCPU.py	/^    executeLSQTransfersQueueSize = Param.Unsigned(2,$/;"	v	class:MinorCPU
+executeMaxAccessesInMemory	MinorCPU.py	/^    executeMaxAccessesInMemory = Param.Unsigned(2,$/;"	v	class:MinorCPU
+executeMemRefInst	execute.cc	/^Execute::executeMemRefInst(MinorDynInstPtr inst, BranchData &branch,$/;"	f	class:Minor::Execute
+executeMemoryCommitLimit	MinorCPU.py	/^    executeMemoryCommitLimit = Param.Unsigned(1,$/;"	v	class:MinorCPU
+executeMemoryIssueLimit	MinorCPU.py	/^    executeMemoryIssueLimit = Param.Unsigned(1,$/;"	v	class:MinorCPU
+executeMemoryWidth	MinorCPU.py	/^    executeMemoryWidth = Param.Unsigned(0,$/;"	v	class:MinorCPU
+executeSetTraceTimeOnCommit	MinorCPU.py	/^    executeSetTraceTimeOnCommit = Param.Bool(True,$/;"	v	class:MinorCPU
+executeSetTraceTimeOnIssue	MinorCPU.py	/^    executeSetTraceTimeOnIssue = Param.Bool(False,$/;"	v	class:MinorCPU
+expectedStreamSeqNum	fetch2.hh	/^    InstSeqNum expectedStreamSeqNum;$/;"	m	class:Minor::Fetch2
+extraAssumedLat	MinorCPU.py	/^    extraAssumedLat = Param.Cycles(0, "extra cycles to add to scoreboard"$/;"	v	class:MinorFUTiming
+extraAssumedLat	func_unit.hh	/^    Cycles extraAssumedLat;$/;"	m	class:MinorFUTiming
+extraCommitDelay	dyn_inst.hh	/^    Cycles extraCommitDelay;$/;"	m	class:Minor::MinorDynInst
+extraCommitDelayExpr	dyn_inst.hh	/^    TimingExpr *extraCommitDelayExpr;$/;"	m	class:Minor::MinorDynInst
+extraCommitLat	MinorCPU.py	/^    extraCommitLat = Param.Cycles(0, "extra cycles to stall commit for"$/;"	v	class:MinorFUTiming
+extraCommitLat	func_unit.hh	/^    Cycles extraCommitLat;$/;"	m	class:MinorFUTiming
+extraCommitLatExpr	MinorCPU.py	/^    extraCommitLatExpr = Param.TimingExpr(NULL, "extra cycles as a"$/;"	v	class:MinorFUTiming
+extraCommitLatExpr	func_unit.hh	/^    TimingExpr *extraCommitLatExpr;$/;"	m	class:MinorFUTiming
+f1ToF2	pipeline.hh	/^    Latch<ForwardLineData> f1ToF2;$/;"	m	class:Minor::Pipeline
+f2ToD	pipeline.hh	/^    Latch<ForwardInstData> f2ToD;$/;"	m	class:Minor::Pipeline
+f2ToF1	pipeline.hh	/^    Latch<BranchData> f2ToF1;$/;"	m	class:Minor::Pipeline
+fault	dyn_inst.hh	/^    Fault fault;$/;"	m	class:Minor::MinorDynInst
+fault	fetch1.hh	/^        Fault fault;$/;"	m	class:Minor::Fetch1::FetchRequest
+fault	lsq.hh	/^        Fault fault;$/;"	m	class:Minor::LSQ::LSQRequest
+fault	pipe_data.hh	/^    Fault fault;$/;"	m	class:Minor::ForwardLineData
+fetch	fetch1.hh	/^        Fetch1 &fetch;$/;"	m	class:Minor::Fetch1::FetchRequest
+fetch	fetch1.hh	/^        Fetch1 &fetch;$/;"	m	class:Minor::Fetch1::IcachePort
+fetch1	pipeline.hh	/^    Fetch1 fetch1;$/;"	m	class:Minor::Pipeline
+fetch1FetchLimit	MinorCPU.py	/^    fetch1FetchLimit = Param.Unsigned(1,$/;"	v	class:MinorCPU
+fetch1LineSnapWidth	MinorCPU.py	/^    fetch1LineSnapWidth = Param.Unsigned(0,$/;"	v	class:MinorCPU
+fetch1LineWidth	MinorCPU.py	/^    fetch1LineWidth = Param.Unsigned(0,$/;"	v	class:MinorCPU
+fetch1ToFetch2BackwardDelay	MinorCPU.py	/^    fetch1ToFetch2BackwardDelay = Param.Cycles(1,$/;"	v	class:MinorCPU
+fetch1ToFetch2ForwardDelay	MinorCPU.py	/^    fetch1ToFetch2ForwardDelay = Param.Cycles(1,$/;"	v	class:MinorCPU
+fetch2	pipeline.hh	/^    Fetch2 fetch2;$/;"	m	class:Minor::Pipeline
+fetch2CycleInput	MinorCPU.py	/^    fetch2CycleInput = Param.Bool(True,$/;"	v	class:MinorCPU
+fetch2InputBufferSize	MinorCPU.py	/^    fetch2InputBufferSize = Param.Unsigned(2,$/;"	v	class:MinorCPU
+fetch2ToDecodeForwardDelay	MinorCPU.py	/^    fetch2ToDecodeForwardDelay = Param.Cycles(1,$/;"	v	class:MinorCPU
+fetchLimit	fetch1.hh	/^    unsigned int fetchLimit;$/;"	m	class:Minor::Fetch1
+fetchLine	fetch1.cc	/^Fetch1::fetchLine()$/;"	f	class:Minor::Fetch1
+fetchSeqNum	dyn_inst.hh	/^    InstSeqNum fetchSeqNum;$/;"	m	class:Minor::InstId
+fetchSeqNum	fetch2.hh	/^    InstSeqNum fetchSeqNum;$/;"	m	class:Minor::Fetch2
+findIndex	scoreboard.cc	/^Scoreboard::findIndex(RegIndex reg, Index &scoreboard_index)$/;"	f	class:Minor::Scoreboard
+findResponse	lsq.cc	/^LSQ::findResponse(MinorDynInstPtr inst)$/;"	f	class:Minor::LSQ
+findTiming	func_unit.cc	/^FUPipeline::findTiming(const StaticInstPtr &inst)$/;"	f	class:Minor::FUPipeline
+finish	fetch1.cc	/^Fetch1::FetchRequest::finish(const Fault &fault_, RequestPtr request_,$/;"	f	class:Minor::Fetch1::FetchRequest
+finish	lsq.cc	/^LSQ::SingleDataRequest::finish(const Fault &fault_, RequestPtr request_,$/;"	f	class:Minor::LSQ::SingleDataRequest
+finish	lsq.cc	/^LSQ::SplitDataRequest::finish(const Fault &fault_, RequestPtr request_,$/;"	f	class:Minor::LSQ::SplitDataRequest
+finish	lsq.hh	/^        void finish(const Fault &fault_, RequestPtr request_,$/;"	f	class:Minor::LSQ::SpecialDataRequest
+firstExecSeqNum	dyn_inst.hh	/^    static const InstSeqNum firstExecSeqNum = 1;$/;"	m	class:Minor::InstId
+firstFetchSeqNum	dyn_inst.hh	/^    static const InstSeqNum firstFetchSeqNum = 1;$/;"	m	class:Minor::InstId
+firstLineSeqNum	dyn_inst.hh	/^    static const InstSeqNum firstLineSeqNum = 1;$/;"	m	class:Minor::InstId
+firstPredictionSeqNum	dyn_inst.hh	/^    static const InstSeqNum firstPredictionSeqNum = 1;$/;"	m	class:Minor::InstId
+firstStreamSeqNum	dyn_inst.hh	/^    static const InstSeqNum firstStreamSeqNum = 1;$/;"	m	class:Minor::InstId
+flatDestRegIdx	dyn_inst.hh	/^    TheISA::RegIndex flatDestRegIdx[TheISA::MaxInstDestRegs];$/;"	m	class:Minor::MinorDynInst
+flattenRegIndex	scoreboard.cc	/^flattenRegIndex(TheISA::RegIndex reg, ThreadContext *thread_context)$/;"	f	namespace:Minor
+forwardStoreData	lsq.cc	/^LSQ::StoreBuffer::forwardStoreData(LSQRequestPtr load,$/;"	f	class:Minor::LSQ::StoreBuffer
+fragmentPackets	lsq.hh	/^        std::vector<Packet *> fragmentPackets;$/;"	m	class:Minor::LSQ::SplitDataRequest
+fragmentRequests	lsq.hh	/^        std::vector<Request *> fragmentRequests;$/;"	m	class:Minor::LSQ::SplitDataRequest
+freeLine	pipe_data.cc	/^ForwardLineData::freeLine()$/;"	f	class:Minor::ForwardLineData
+freeReservation	buffers.hh	/^    void freeReservation() { queue.freeReservation(); }$/;"	f	class:Minor::InputBuffer
+freeReservation	buffers.hh	/^    void freeReservation()$/;"	f	class:Minor::Queue
+front	buffers.hh	/^    ElemType &front() { return *popWire; }$/;"	f	class:Minor::SelfStallingPipeline
+front	buffers.hh	/^    ElemType &front() { return queue.front(); }$/;"	f	class:Minor::Queue
+front	buffers.hh	/^    ElemType &front()$/;"	f	class:Minor::InputBuffer
+front	buffers.hh	/^    const ElemType &front() const { return *popWire; }$/;"	f	class:Minor::SelfStallingPipeline
+front	buffers.hh	/^    const ElemType &front() const { return queue.front(); }$/;"	f	class:Minor::Queue
+front	buffers.hh	/^    const ElemType &front() const$/;"	f	class:Minor::InputBuffer
+fuDescriptions	execute.hh	/^    MinorFUPool &fuDescriptions;$/;"	m	class:Minor::Execute
+fuIndex	dyn_inst.hh	/^    unsigned int fuIndex;$/;"	m	class:Minor::MinorDynInst
+fuIndices	scoreboard.hh	/^    std::vector<int> fuIndices;$/;"	m	class:Minor::Scoreboard
+funcUnits	MinorCPU.py	/^    funcUnits = VectorParam.MinorFU("functional units")$/;"	v	class:MinorFUPool
+funcUnits	MinorCPU.py	/^    funcUnits = [MinorDefaultIntFU(), MinorDefaultIntFU(),$/;"	v	class:MinorDefaultFUPool
+funcUnits	execute.hh	/^    std::vector<FUPipeline *> funcUnits;$/;"	m	class:Minor::Execute
+funcUnits	func_unit.hh	/^    std::vector<MinorFU *> funcUnits;$/;"	m	class:MinorFUPool
+getActivityRecorder	pipeline.hh	/^    MinorActivityRecorder *getActivityRecorder() { return &activityRecorder; }$/;"	f	class:Minor::Pipeline
+getAddrMonitor	exec_context.hh	/^    AddressMonitor *getAddrMonitor()$/;"	f	class:Minor::ExecContext
+getCpuPtr	exec_context.hh	/^    BaseCPU *getCpuPtr() { return &cpu; }$/;"	f	class:Minor::ExecContext
+getDataPort	cpu.cc	/^MasterPort &MinorCPU::getDataPort()$/;"	f	class:MinorCPU
+getDataPort	pipeline.cc	/^Pipeline::getDataPort()$/;"	f	class:Minor::Pipeline
+getDcachePort	execute.cc	/^Execute::getDcachePort()$/;"	f	class:Minor::Execute
+getDcachePort	lsq.hh	/^    MinorCPU::MinorCPUPort &getDcachePort() { return dcachePort; }$/;"	f	class:Minor::LSQ
+getEA	exec_context.hh	/^    Addr getEA() const$/;"	f	class:Minor::ExecContext
+getHeadPacket	lsq.cc	/^LSQ::SplitDataRequest::getHeadPacket()$/;"	f	class:Minor::LSQ::SplitDataRequest
+getHeadPacket	lsq.hh	/^        PacketPtr getHeadPacket() { return packet; }$/;"	f	class:Minor::LSQ::SingleDataRequest
+getHeadPacket	lsq.hh	/^        PacketPtr getHeadPacket()$/;"	f	class:Minor::LSQ::SpecialDataRequest
+getIcachePort	fetch1.hh	/^    MinorCPU::MinorCPUPort &getIcachePort() { return icachePort; }$/;"	f	class:Minor::Fetch1
+getInput	decode.cc	/^Decode::getInput()$/;"	f	class:Minor::Decode
+getInput	execute.cc	/^Execute::getInput()$/;"	f	class:Minor::Execute
+getInput	fetch2.cc	/^Fetch2::getInput()$/;"	f	class:Minor::Fetch2
+getInstPort	cpu.cc	/^MasterPort &MinorCPU::getInstPort()$/;"	f	class:MinorCPU
+getInstPort	pipeline.cc	/^Pipeline::getInstPort()$/;"	f	class:Minor::Pipeline
+getLSQ	execute.hh	/^    LSQ &getLSQ() { return lsq; }$/;"	f	class:Minor::Execute
+getLastMemBarrier	lsq.hh	/^    InstSeqNum getLastMemBarrier() const { return lastMemBarrier; }$/;"	f	class:Minor::LSQ
+handleMemResponse	execute.cc	/^Execute::handleMemResponse(MinorDynInstPtr inst,$/;"	f	class:Minor::Execute
+handleTLBResponse	fetch1.cc	/^Fetch1::handleTLBResponse(FetchRequestPtr response)$/;"	f	class:Minor::Fetch1
+hasPacketsInMemSystem	lsq.hh	/^        bool hasPacketsInMemSystem() { return false; }$/;"	f	class:Minor::LSQ::SpecialDataRequest
+hasPacketsInMemSystem	lsq.hh	/^        bool hasPacketsInMemSystem() { return packetInFlight; }$/;"	f	class:Minor::LSQ::SingleDataRequest
+hasPacketsInMemSystem	lsq.hh	/^        bool hasPacketsInMemSystem()$/;"	f	class:Minor::LSQ::SplitDataRequest
+havePC	fetch2.hh	/^    bool havePC;$/;"	m	class:Minor::Fetch2
+hwrei	exec_context.hh	/^    hwrei()$/;"	f	class:Minor::ExecContext
+icachePort	fetch1.hh	/^    IcachePort icachePort;$/;"	m	class:Minor::Fetch1
+icacheState	fetch1.hh	/^    IcacheState icacheState;$/;"	m	class:Minor::Fetch1
+id	dyn_inst.hh	/^    InstId id;$/;"	m	class:Minor::MinorDynInst
+id	fetch1.hh	/^        InstId id;$/;"	m	class:Minor::Fetch1::FetchRequest
+id	pipe_data.hh	/^    InstId id;$/;"	m	class:Minor::ForwardLineData
+inFUMemInsts	execute.hh	/^    Queue<QueuedInst, ReportTraitsAdaptor<QueuedInst> > *inFUMemInsts;$/;"	m	class:Minor::Execute
+inFlightInsts	execute.hh	/^    Queue<QueuedInst, ReportTraitsAdaptor<QueuedInst> > *inFlightInsts;$/;"	m	class:Minor::Execute
+inLSQ	dyn_inst.hh	/^    bool inLSQ;$/;"	m	class:Minor::MinorDynInst
+inMacroop	decode.hh	/^    bool inMacroop;$/;"	m	class:Minor::Decode
+inMemorySystemLimit	lsq.hh	/^    const unsigned int inMemorySystemLimit;$/;"	m	class:Minor::LSQ
+inStoreBuffer	dyn_inst.hh	/^    bool inStoreBuffer;$/;"	m	class:Minor::MinorDynInst
+init	cpu.cc	/^MinorCPU::init()$/;"	f	class:MinorCPU
+init	dyn_inst.cc	/^MinorDynInst::init()$/;"	f	class:Minor::MinorDynInst
+inp	decode.hh	/^    Latch<ForwardInstData>::Output inp;$/;"	m	class:Minor::Decode
+inp	execute.hh	/^    Latch<ForwardInstData>::Output inp;$/;"	m	class:Minor::Execute
+inp	fetch1.hh	/^    Latch<BranchData>::Output inp;$/;"	m	class:Minor::Fetch1
+inp	fetch2.hh	/^    Latch<ForwardLineData>::Output inp;$/;"	m	class:Minor::Fetch2
+input	buffers.hh	/^    Input input() { return Input(buffer.getWire(0)); }$/;"	f	class:Minor::Latch
+inputBuffer	decode.hh	/^    InputBuffer<ForwardInstData> inputBuffer;$/;"	m	class:Minor::Decode
+inputBuffer	execute.hh	/^    InputBuffer<ForwardInstData> inputBuffer;$/;"	m	class:Minor::Execute
+inputBuffer	fetch2.hh	/^    InputBuffer<ForwardLineData> inputBuffer;$/;"	m	class:Minor::Fetch2
+inputIndex	decode.hh	/^    unsigned int inputIndex;$/;"	m	class:Minor::Decode
+inputIndex	execute.hh	/^    unsigned int inputIndex;$/;"	m	class:Minor::Execute
+inputIndex	fetch2.hh	/^    unsigned int inputIndex;$/;"	m	class:Minor::Fetch2
+inputWire	buffers.hh	/^        typename Buffer::wire inputWire;$/;"	m	class:Minor::Latch::Input
+insert	lsq.cc	/^LSQ::StoreBuffer::insert(LSQRequestPtr request)$/;"	f	class:Minor::LSQ::StoreBuffer
+inst	exec_context.hh	/^    MinorDynInstPtr inst;$/;"	m	class:Minor::ExecContext
+inst	func_unit.hh	/^    MinorDynInstPtr inst;$/;"	m	class:Minor::QueuedInst
+inst	lsq.hh	/^        MinorDynInstPtr inst;$/;"	m	class:Minor::LSQ::LSQRequest
+inst	pipe_data.hh	/^    MinorDynInstPtr inst;$/;"	m	class:Minor::BranchData
+instIsHeadInst	execute.cc	/^Execute::instIsHeadInst(MinorDynInstPtr inst)$/;"	f	class:Minor::Execute
+instIsRightStream	execute.cc	/^Execute::instIsRightStream(MinorDynInstPtr inst)$/;"	f	class:Minor::Execute
+instToWaitFor	dyn_inst.hh	/^    InstSeqNum instToWaitFor;$/;"	m	class:Minor::MinorDynInst
+insts	pipe_data.hh	/^    MinorDynInstPtr insts[MAX_FORWARD_INSTS];$/;"	m	class:Minor::ForwardInstData
+instsBeingCommitted	execute.hh	/^    ForwardInstData instsBeingCommitted;$/;"	m	class:Minor::Execute
+ipc	stats.hh	/^    Stats::Formula ipc;$/;"	m	class:Minor::MinorStats
+isBarrier	lsq.cc	/^LSQ::LSQRequest::isBarrier()$/;"	f	class:Minor::LSQ::LSQRequest
+isBarrier	lsq.hh	/^        bool isBarrier() { return true; }$/;"	f	class:Minor::LSQ::BarrierDataRequest
+isBranch	pipe_data.cc	/^BranchData::isBranch(const BranchData::Reason reason)$/;"	f	class:Minor::BranchData
+isBranch	pipe_data.hh	/^    bool isBranch() const { return isBranch(reason); }$/;"	f	class:Minor::BranchData
+isBubble	buffers.hh	/^    static bool isBubble(const ElemType &) { return false; }$/;"	f	class:Minor::NoBubbleTraits
+isBubble	buffers.hh	/^    static bool isBubble(const ElemType &elem)$/;"	f	class:Minor::BubbleTraitsAdaptor
+isBubble	buffers.hh	/^    static bool isBubble(const PtrType &elem)$/;"	f	class:Minor::BubbleTraitsPtrAdaptor
+isBubble	dyn_inst.hh	/^    bool isBubble() const { return id.fetchSeqNum == 0; }$/;"	f	class:Minor::MinorDynInst
+isBubble	func_unit.hh	/^    bool isBubble() const { return inst->isBubble(); }$/;"	f	class:Minor::QueuedInst
+isBubble	pipe_data.cc	/^ForwardInstData::isBubble() const$/;"	f	class:Minor::ForwardInstData
+isBubble	pipe_data.hh	/^    bool isBubble() const { return bubbleFlag; }$/;"	f	class:Minor::ForwardLineData
+isBubble	pipe_data.hh	/^    bool isBubble() const { return reason == NoBranch; }$/;"	f	class:Minor::BranchData
+isComplete	fetch1.hh	/^        bool isComplete() const { return state == Complete; }$/;"	f	class:Minor::Fetch1::FetchRequest
+isComplete	lsq.cc	/^LSQ::LSQRequest::isComplete() const$/;"	f	class:Minor::LSQ::LSQRequest
+isDiscardable	fetch1.cc	/^bool Fetch1::FetchRequest::isDiscardable() const$/;"	f	class:Minor::Fetch1::FetchRequest
+isDrained	decode.cc	/^Decode::isDrained()$/;"	f	class:Minor::Decode
+isDrained	execute.cc	/^Execute::isDrained()$/;"	f	class:Minor::Execute
+isDrained	fetch1.cc	/^Fetch1::isDrained()$/;"	f	class:Minor::Fetch1
+isDrained	fetch2.cc	/^Fetch2::isDrained()$/;"	f	class:Minor::Fetch2
+isDrained	lsq.cc	/^LSQ::isDrained()$/;"	f	class:Minor::LSQ
+isDrained	lsq.hh	/^        bool isDrained() const { return slots.empty(); }$/;"	f	class:Minor::LSQ::StoreBuffer
+isDrained	pipeline.cc	/^Pipeline::isDrained()$/;"	f	class:Minor::Pipeline
+isFault	dyn_inst.hh	/^    bool isFault() const { return fault != NoFault; }$/;"	f	class:Minor::MinorDynInst
+isFault	pipe_data.hh	/^    bool isFault() const { return fault != NoFault; }$/;"	f	class:Minor::ForwardLineData
+isInbetweenInsts	execute.cc	/^Execute::isInbetweenInsts() const$/;"	f	class:Minor::Execute
+isInst	dyn_inst.hh	/^    bool isInst() const { return !isBubble() && !isFault(); }$/;"	f	class:Minor::MinorDynInst
+isInterrupted	execute.cc	/^Execute::isInterrupted(ThreadID thread_id) const$/;"	f	class:Minor::Execute
+isLastOpInInst	dyn_inst.cc	/^MinorDynInst::isLastOpInInst() const$/;"	f	class:Minor::MinorDynInst
+isLoad	lsq.hh	/^        bool isLoad;$/;"	m	class:Minor::LSQ::LSQRequest
+isMemRef	dyn_inst.hh	/^    bool isMemRef() const { return isInst() && staticInst->isMemRef(); }$/;"	f	class:Minor::MinorDynInst
+isNoCostInst	dyn_inst.cc	/^MinorDynInst::isNoCostInst() const$/;"	f	class:Minor::MinorDynInst
+isPopable	buffers.hh	/^    bool isPopable() { return !BubbleTraits::isBubble(front()); }$/;"	f	class:Minor::SelfStallingPipeline
+isStreamChange	pipe_data.cc	/^BranchData::isStreamChange(const BranchData::Reason reason)$/;"	f	class:Minor::BranchData
+isStreamChange	pipe_data.hh	/^    bool isStreamChange() const { return isStreamChange(reason); }$/;"	f	class:Minor::BranchData
+issue	execute.cc	/^Execute::issue(bool only_issue_microops)$/;"	f	class:Minor::Execute
+issueLat	MinorCPU.py	/^    issueLat = 9$/;"	v	class:MinorDefaultIntDivFU
+issueLat	MinorCPU.py	/^    issueLat = Param.Cycles(1, "cycles until another instruction can be"$/;"	v	class:MinorFU
+issueLat	func_unit.hh	/^    Cycles issueLat;$/;"	m	class:MinorFU
+issueLimit	execute.hh	/^    unsigned int issueLimit;$/;"	m	class:Minor::Execute
+issuedMemBarrierInst	lsq.cc	/^LSQ::issuedMemBarrierInst(MinorDynInstPtr inst)$/;"	f	class:Minor::LSQ
+issuedToMemory	lsq.hh	/^        bool issuedToMemory;$/;"	m	class:Minor::LSQ::LSQRequest
+lastCommitWasEndOfMacroop	execute.hh	/^    bool lastCommitWasEndOfMacroop;$/;"	m	class:Minor::Execute
+lastMemBarrier	lsq.hh	/^    InstSeqNum lastMemBarrier;$/;"	m	class:Minor::LSQ
+lastPredictionSeqNum	execute.hh	/^    InstSeqNum lastPredictionSeqNum;$/;"	m	class:Minor::Execute
+lastStreamSeqNum	fetch2.hh	/^    InstSeqNum lastStreamSeqNum;$/;"	m	class:Minor::Fetch2
+line	pipe_data.hh	/^    uint8_t *line;$/;"	m	class:Minor::ForwardLineData
+lineBaseAddr	pipe_data.hh	/^    Addr lineBaseAddr;$/;"	m	class:Minor::ForwardLineData
+lineSeqNum	dyn_inst.hh	/^    InstSeqNum lineSeqNum;$/;"	m	class:Minor::InstId
+lineSeqNum	fetch1.hh	/^    InstSeqNum lineSeqNum;$/;"	m	class:Minor::Fetch1
+lineSnap	fetch1.hh	/^    unsigned int lineSnap;$/;"	m	class:Minor::Fetch1
+lineWidth	lsq.hh	/^    const unsigned int lineWidth;$/;"	m	class:Minor::LSQ
+lineWidth	pipe_data.hh	/^    unsigned int lineWidth;$/;"	m	class:Minor::ForwardLineData
+longestFuLatency	execute.hh	/^    Cycles longestFuLatency;$/;"	m	class:Minor::Execute
+lsq	execute.hh	/^    LSQ lsq;$/;"	m	class:Minor::Execute
+lsq	lsq.hh	/^        LSQ &lsq;$/;"	m	class:Minor::LSQ::DcachePort
+lsq	lsq.hh	/^        LSQ &lsq;$/;"	m	class:Minor::LSQ::StoreBuffer
+makeFragmentPackets	lsq.cc	/^LSQ::SplitDataRequest::makeFragmentPackets()$/;"	f	class:Minor::LSQ::SplitDataRequest
+makeFragmentRequests	lsq.cc	/^LSQ::SplitDataRequest::makeFragmentRequests()$/;"	f	class:Minor::LSQ::SplitDataRequest
+makePacket	fetch1.cc	/^Fetch1::FetchRequest::makePacket()$/;"	f	class:Minor::Fetch1::FetchRequest
+makePacket	lsq.cc	/^LSQ::LSQRequest::makePacket()$/;"	f	class:Minor::LSQ::LSQRequest
+makePacketForRequest	lsq.cc	/^makePacketForRequest(Request &request, bool isLoad,$/;"	f	namespace:Minor
+markDelayed	fetch1.hh	/^        void markDelayed() { }$/;"	f	class:Minor::Fetch1::FetchRequest
+markDelayed	lsq.hh	/^        void markDelayed() { }$/;"	f	class:Minor::LSQ::LSQRequest
+markupInstDests	scoreboard.cc	/^Scoreboard::markupInstDests(MinorDynInstPtr inst, Cycles retire_time,$/;"	f	class:Minor::Scoreboard
+mask	MinorCPU.py	/^    mask = Param.UInt64(0, "mask for testing ExtMachInst")$/;"	v	class:MinorFUTiming
+mask	func_unit.hh	/^    uint64_t mask;$/;"	m	class:MinorFUTiming
+match	MinorCPU.py	/^    match = Param.UInt64(0, "match value for testing ExtMachInst:"$/;"	v	class:MinorFUTiming
+match	func_unit.hh	/^    uint64_t match;$/;"	m	class:MinorFUTiming
+maxLineWidth	fetch1.hh	/^    unsigned int maxLineWidth;$/;"	m	class:Minor::Fetch1
+memWriteback	cpu.cc	/^MinorCPU::memWriteback()$/;"	f	class:MinorCPU
+memoryCommitLimit	execute.hh	/^    unsigned int memoryCommitLimit;$/;"	m	class:Minor::Execute
+memoryIssueLimit	execute.hh	/^    unsigned int memoryIssueLimit;$/;"	m	class:Minor::Execute
+memory_mode	MinorCPU.py	/^    def memory_mode(cls):$/;"	m	class:MinorCPU
+microopPC	decode.hh	/^    TheISA::PCState microopPC;$/;"	m	class:Minor::Decode
+minimumCommitCycle	dyn_inst.hh	/^    Cycles minimumCommitCycle;$/;"	m	class:Minor::MinorDynInst
+minorMakeOpClassSet	MinorCPU.py	/^def minorMakeOpClassSet(op_classes):$/;"	f
+minorTrace	activity.cc	/^MinorActivityRecorder::minorTrace() const$/;"	f	class:Minor::MinorActivityRecorder
+minorTrace	buffers.hh	/^    minorTrace() const$/;"	f	class:Minor::InputBuffer
+minorTrace	buffers.hh	/^    minorTrace() const$/;"	f	class:Minor::MinorBuffer
+minorTrace	buffers.hh	/^    minorTrace() const$/;"	f	class:Minor::Queue
+minorTrace	buffers.hh	/^    void minorTrace() const { buffer.minorTrace(); }$/;"	f	class:Minor::Latch
+minorTrace	decode.cc	/^Decode::minorTrace() const$/;"	f	class:Minor::Decode
+minorTrace	execute.cc	/^Execute::minorTrace() const$/;"	f	class:Minor::Execute
+minorTrace	fetch1.cc	/^Fetch1::minorTrace() const$/;"	f	class:Minor::Fetch1
+minorTrace	fetch2.cc	/^Fetch2::minorTrace() const$/;"	f	class:Minor::Fetch2
+minorTrace	lsq.cc	/^LSQ::StoreBuffer::minorTrace() const$/;"	f	class:Minor::LSQ::StoreBuffer
+minorTrace	lsq.cc	/^LSQ::minorTrace() const$/;"	f	class:Minor::LSQ
+minorTrace	pipeline.cc	/^Pipeline::minorTrace() const$/;"	f	class:Minor::Pipeline
+minorTrace	scoreboard.cc	/^Scoreboard::minorTrace() const$/;"	f	class:Minor::Scoreboard
+minorTraceInst	dyn_inst.cc	/^MinorDynInst::minorTraceInst(const Named &named_object) const$/;"	f	class:Minor::MinorDynInst
+minorTraceResponseLine	fetch1.cc	/^Fetch1::minorTraceResponseLine(const std::string &name,$/;"	f	class:Minor::Fetch1
+moveFromRequestsToTransfers	fetch1.cc	/^Fetch1::moveFromRequestsToTransfers(FetchRequestPtr request)$/;"	f	class:Minor::Fetch1
+moveFromRequestsToTransfers	lsq.cc	/^LSQ::moveFromRequestsToTransfers(LSQRequestPtr request)$/;"	f	class:Minor::LSQ
+mwait	exec_context.hh	/^    bool mwait(PacketPtr pkt) { return getCpuPtr()->mwait(pkt); }$/;"	f	class:Minor::ExecContext
+mwaitAtomic	exec_context.hh	/^    void mwaitAtomic(ThreadContext *tc)$/;"	f	class:Minor::ExecContext
+needToSignalDrained	pipeline.hh	/^    bool needToSignalDrained;$/;"	m	class:Minor::Pipeline
+needsToBeSentToStoreBuffer	lsq.cc	/^LSQ::LSQRequest::needsToBeSentToStoreBuffer()$/;"	f	class:Minor::LSQ::LSQRequest
+needsToTick	lsq.cc	/^LSQ::needsToTick()$/;"	f	class:Minor::LSQ
+newPredictionSeqNum	pipe_data.hh	/^    InstSeqNum newPredictionSeqNum;$/;"	m	class:Minor::BranchData
+newStreamSeqNum	pipe_data.hh	/^    InstSeqNum newStreamSeqNum;$/;"	m	class:Minor::BranchData
+nextInsertCycle	func_unit.hh	/^    Cycles nextInsertCycle;$/;"	m	class:Minor::FUPipeline
+nextStageReserve	decode.hh	/^    Reservable &nextStageReserve;$/;"	m	class:Minor::Decode
+nextStageReserve	fetch1.hh	/^    Reservable &nextStageReserve;$/;"	m	class:Minor::Fetch1
+nextStageReserve	fetch2.hh	/^    Reservable &nextStageReserve;$/;"	m	class:Minor::Fetch2
+noCostFUIndex	execute.hh	/^    unsigned int noCostFUIndex;$/;"	m	class:Minor::Execute
+numAccessesInDTLB	lsq.hh	/^    unsigned int numAccessesInDTLB;$/;"	m	class:Minor::LSQ
+numAccessesInMemorySystem	lsq.hh	/^    unsigned int numAccessesInMemorySystem;$/;"	m	class:Minor::LSQ
+numAccessesIssuedToMemory	lsq.hh	/^    unsigned int numAccessesIssuedToMemory;$/;"	m	class:Minor::LSQ
+numDiscardedOps	stats.hh	/^    Stats::Scalar numDiscardedOps;$/;"	m	class:Minor::MinorStats
+numFetchSuspends	stats.hh	/^    Stats::Scalar numFetchSuspends;$/;"	m	class:Minor::MinorStats
+numFetchesInITLB	fetch1.hh	/^    unsigned int numFetchesInITLB;$/;"	m	class:Minor::Fetch1
+numFetchesInMemorySystem	fetch1.hh	/^    unsigned int numFetchesInMemorySystem;$/;"	m	class:Minor::Fetch1
+numFragments	lsq.hh	/^        unsigned int numFragments;$/;"	m	class:Minor::LSQ::SplitDataRequest
+numFuncUnits	execute.hh	/^    unsigned int numFuncUnits;$/;"	m	class:Minor::Execute
+numInFlightFetches	fetch1.cc	/^Fetch1::numInFlightFetches()$/;"	f	class:Minor::Fetch1
+numInTranslationFragments	lsq.hh	/^        unsigned int numInTranslationFragments;$/;"	m	class:Minor::LSQ::SplitDataRequest
+numInsts	pipe_data.hh	/^    unsigned int numInsts;$/;"	m	class:Minor::ForwardInstData
+numInsts	stats.hh	/^    Stats::Scalar numInsts;$/;"	m	class:Minor::MinorStats
+numIssuedFragments	lsq.hh	/^        unsigned int numIssuedFragments;$/;"	m	class:Minor::LSQ::SplitDataRequest
+numOps	stats.hh	/^    Stats::Scalar numOps;$/;"	m	class:Minor::MinorStats
+numRegs	scoreboard.hh	/^    const unsigned numRegs;$/;"	m	class:Minor::Scoreboard
+numReservedSlots	buffers.hh	/^    unsigned int numReservedSlots;$/;"	m	class:Minor::Queue
+numResults	scoreboard.hh	/^    std::vector<Index> numResults;$/;"	m	class:Minor::Scoreboard
+numRetiredFragments	lsq.hh	/^        unsigned int numRetiredFragments;$/;"	m	class:Minor::LSQ::SplitDataRequest
+numSlots	lsq.hh	/^        const unsigned int numSlots;$/;"	m	class:Minor::LSQ::StoreBuffer
+numStoresInTransfers	lsq.hh	/^    unsigned int numStoresInTransfers;$/;"	m	class:Minor::LSQ
+numTranslatedFragments	lsq.hh	/^        unsigned int numTranslatedFragments;$/;"	m	class:Minor::LSQ::SplitDataRequest
+numUnissuedAccesses	lsq.hh	/^        unsigned int numUnissuedAccesses;$/;"	m	class:Minor::LSQ::StoreBuffer
+numUnissuedStores	lsq.hh	/^        unsigned int numUnissuedStores() { return numUnissuedAccesses; }$/;"	f	class:Minor::LSQ::StoreBuffer
+numUnpredictableResults	scoreboard.hh	/^    std::vector<Index> numUnpredictableResults;$/;"	m	class:Minor::Scoreboard
+occupancy	buffers.hh	/^    unsigned int occupancy;$/;"	m	class:Minor::SelfStallingPipeline
+occupiedSpace	buffers.hh	/^    unsigned int occupiedSpace() const { return queue.size(); }$/;"	f	class:Minor::Queue
+opClass	MinorCPU.py	/^    opClass = Param.OpClass("op class to match")$/;"	v	class:MinorOpClass
+opClass	func_unit.hh	/^    OpClass opClass;$/;"	m	class:MinorOpClass
+opClasses	MinorCPU.py	/^    opClasses = Param.MinorOpClassSet(MinorOpClassSet(), "type of operations"$/;"	v	class:MinorFU
+opClasses	MinorCPU.py	/^    opClasses = Param.MinorOpClassSet(MinorOpClassSet(),$/;"	v	class:MinorFUTiming
+opClasses	MinorCPU.py	/^    opClasses = VectorParam.MinorOpClass([], "op classes to be matched."$/;"	v	class:MinorOpClassSet
+opClasses	MinorCPU.py	/^    opClasses = minorMakeOpClassSet([$/;"	v	class:MinorDefaultFloatSimdFU
+opClasses	MinorCPU.py	/^    opClasses = minorMakeOpClassSet(['IntAlu'])$/;"	v	class:MinorDefaultIntFU
+opClasses	MinorCPU.py	/^    opClasses = minorMakeOpClassSet(['IntDiv'])$/;"	v	class:MinorDefaultIntDivFU
+opClasses	MinorCPU.py	/^    opClasses = minorMakeOpClassSet(['IntMult'])$/;"	v	class:MinorDefaultIntMulFU
+opClasses	MinorCPU.py	/^    opClasses = minorMakeOpClassSet(['IprAccess', 'InstPrefetch'])$/;"	v	class:MinorDefaultMiscFU
+opClasses	MinorCPU.py	/^    opClasses = minorMakeOpClassSet(['MemRead', 'MemWrite'])$/;"	v	class:MinorDefaultMemFU
+opClasses	func_unit.hh	/^    MinorOpClassSet *opClasses;$/;"	m	class:MinorFU
+opClasses	func_unit.hh	/^    MinorOpClassSet *opClasses;$/;"	m	class:MinorFUTiming
+opClasses	func_unit.hh	/^    std::vector<MinorOpClass *> opClasses;$/;"	m	class:MinorOpClassSet
+opLat	MinorCPU.py	/^    opLat = 1$/;"	v	class:MinorDefaultMemFU
+opLat	MinorCPU.py	/^    opLat = 1$/;"	v	class:MinorDefaultMiscFU
+opLat	MinorCPU.py	/^    opLat = 3$/;"	v	class:MinorDefaultIntFU
+opLat	MinorCPU.py	/^    opLat = 3$/;"	v	class:MinorDefaultIntMulFU
+opLat	MinorCPU.py	/^    opLat = 6$/;"	v	class:MinorDefaultFloatSimdFU
+opLat	MinorCPU.py	/^    opLat = 9$/;"	v	class:MinorDefaultIntDivFU
+opLat	MinorCPU.py	/^    opLat = Param.Cycles(1, "latency in cycles")$/;"	v	class:MinorFU
+opLat	func_unit.hh	/^    Cycles opLat;$/;"	m	class:MinorFU
+operator <<	dyn_inst.cc	/^operator <<(std::ostream &os, const InstId &id)$/;"	f	namespace:Minor
+operator <<	dyn_inst.cc	/^operator <<(std::ostream &os, const MinorDynInst &inst)$/;"	f	namespace:Minor
+operator <<	execute.cc	/^std::ostream &operator <<(std::ostream &os, Execute::DrainState state)$/;"	f	namespace:Minor
+operator <<	fetch1.cc	/^operator <<(std::ostream &os, Fetch1::FetchState state)$/;"	f	namespace:Minor
+operator <<	fetch1.cc	/^operator <<(std::ostream &os, Fetch1::IcacheState state)$/;"	f	namespace:Minor
+operator <<	lsq.cc	/^operator <<(std::ostream &os, LSQ::AddrRangeCoverage coverage)$/;"	f	namespace:Minor
+operator <<	lsq.cc	/^operator <<(std::ostream &os, LSQ::LSQRequest::LSQRequestState state)$/;"	f	namespace:Minor
+operator <<	lsq.cc	/^operator <<(std::ostream &os, LSQ::MemoryState state)$/;"	f	namespace:Minor
+operator <<	pipe_data.cc	/^operator <<(std::ostream &os, BranchData::Reason reason)$/;"	f	namespace:Minor
+operator <<	pipe_data.cc	/^operator <<(std::ostream &os, const BranchData &branch)$/;"	f	namespace:Minor
+operator =	pipe_data.cc	/^ForwardInstData::operator =(const ForwardInstData &src)$/;"	f	class:Minor::ForwardInstData
+operator ==	dyn_inst.hh	/^    operator== (const InstId &rhs)$/;"	f	class:Minor::InstId
+out	decode.hh	/^    Latch<ForwardInstData>::Input out;$/;"	m	class:Minor::Decode
+out	execute.hh	/^    Latch<BranchData>::Input out;$/;"	m	class:Minor::Execute
+out	fetch1.hh	/^    Latch<ForwardLineData>::Input out;$/;"	m	class:Minor::Fetch1
+out	fetch2.hh	/^    Latch<ForwardInstData>::Input out;$/;"	m	class:Minor::Fetch2
+output	buffers.hh	/^    Output output() { return Output(buffer.getWire(-delay)); }$/;"	f	class:Minor::Latch
+outputWidth	decode.hh	/^    unsigned int outputWidth;$/;"	m	class:Minor::Decode
+outputWidth	fetch2.hh	/^    unsigned int outputWidth;$/;"	m	class:Minor::Fetch2
+outputWire	buffers.hh	/^        typename Buffer::wire outputWire;$/;"	m	class:Minor::Latch::Output
+owner	lsq.hh	/^            SplitDataRequest &owner;$/;"	m	class:Minor::LSQ::SplitDataRequest::TranslationEvent
+packet	fetch1.hh	/^        PacketPtr packet;$/;"	m	class:Minor::Fetch1::FetchRequest
+packet	lsq.hh	/^        PacketPtr packet;$/;"	m	class:Minor::LSQ::LSQRequest
+packet	pipe_data.hh	/^    Packet *packet;$/;"	m	class:Minor::ForwardLineData
+packetInFlight	lsq.hh	/^        bool packetInFlight;$/;"	m	class:Minor::LSQ::SingleDataRequest
+packetSent	lsq.hh	/^        bool packetSent;$/;"	m	class:Minor::LSQ::SingleDataRequest
+pc	dyn_inst.hh	/^    TheISA::PCState pc;$/;"	m	class:Minor::MinorDynInst
+pc	fetch1.hh	/^        TheISA::PCState pc;$/;"	m	class:Minor::Fetch1::FetchRequest
+pc	fetch1.hh	/^    TheISA::PCState pc;$/;"	m	class:Minor::Fetch1
+pc	fetch2.hh	/^    TheISA::PCState pc;$/;"	m	class:Minor::Fetch2
+pc	pipe_data.hh	/^    TheISA::PCState pc;$/;"	m	class:Minor::ForwardLineData
+pcState	exec_context.hh	/^    pcState() const$/;"	f	class:Minor::ExecContext
+pcState	exec_context.hh	/^    pcState(const TheISA::PCState &val)$/;"	f	class:Minor::ExecContext
+pipeline	cpu.hh	/^    Minor::Pipeline *pipeline;$/;"	m	class:MinorCPU
+pop	buffers.hh	/^    pop()$/;"	f	class:Minor::InputBuffer
+pop	buffers.hh	/^    void pop() { queue.pop_front(); }$/;"	f	class:Minor::Queue
+popAndDiscard	fetch1.cc	/^Fetch1::popAndDiscard(FetchQueue &queue)$/;"	f	class:Minor::Fetch1
+popInput	decode.cc	/^Decode::popInput()$/;"	f	class:Minor::Decode
+popInput	execute.cc	/^Execute::popInput()$/;"	f	class:Minor::Execute
+popInput	fetch2.cc	/^Fetch2::popInput()$/;"	f	class:Minor::Fetch2
+popResponse	lsq.cc	/^LSQ::popResponse(LSQ::LSQRequestPtr response)$/;"	f	class:Minor::LSQ
+popWire	buffers.hh	/^    typename TimeBuffer<ElemType>::wire popWire;$/;"	m	class:Minor::SelfStallingPipeline
+port	lsq.hh	/^        LSQ &port;$/;"	m	class:Minor::LSQ::LSQRequest
+predictBranch	fetch2.cc	/^Fetch2::predictBranch(MinorDynInstPtr inst, BranchData &branch)$/;"	f	class:Minor::Fetch2
+predictedTaken	dyn_inst.hh	/^    bool predictedTaken;$/;"	m	class:Minor::MinorDynInst
+predictedTarget	dyn_inst.hh	/^    TheISA::PCState predictedTarget;$/;"	m	class:Minor::MinorDynInst
+prediction	fetch1.hh	/^    Latch<BranchData>::Output prediction;$/;"	m	class:Minor::Fetch1
+predictionOut	fetch2.hh	/^    Latch<BranchData>::Input predictionOut;$/;"	m	class:Minor::Fetch2
+predictionSeqNum	dyn_inst.hh	/^    InstSeqNum predictionSeqNum;$/;"	m	class:Minor::InstId
+predictionSeqNum	fetch1.hh	/^    InstSeqNum predictionSeqNum;$/;"	m	class:Minor::Fetch1
+predictionSeqNum	fetch2.hh	/^    InstSeqNum predictionSeqNum;$/;"	m	class:Minor::Fetch2
+printRegName	dyn_inst.cc	/^printRegName(std::ostream &os, TheISA::RegIndex reg)$/;"	f	namespace:Minor
+process	lsq.hh	/^            void process()$/;"	f	class:Minor::LSQ::SplitDataRequest::TranslationEvent
+processMoreThanOneInput	decode.hh	/^    bool processMoreThanOneInput;$/;"	m	class:Minor::Decode
+processMoreThanOneInput	execute.hh	/^    bool processMoreThanOneInput;$/;"	m	class:Minor::Execute
+processMoreThanOneInput	fetch2.hh	/^    bool processMoreThanOneInput;$/;"	m	class:Minor::Fetch2
+processResponse	fetch1.cc	/^Fetch1::processResponse(Fetch1::FetchRequestPtr response,$/;"	f	class:Minor::Fetch1
+provides	func_unit.hh	/^    bool provides(OpClass op_class) { return capabilityList[op_class]; }$/;"	f	class:MinorOpClassSet
+provides	func_unit.hh	/^    bool provides(OpClass op_class) { return opClasses->provides(op_class); }$/;"	f	class:MinorFUTiming
+push	buffers.hh	/^    push(ElemType &data)$/;"	f	class:Minor::Queue
+push	buffers.hh	/^    void push(ElemType &elem)$/;"	f	class:Minor::SelfStallingPipeline
+pushFailedRequest	lsq.cc	/^LSQ::pushFailedRequest(MinorDynInstPtr inst)$/;"	f	class:Minor::LSQ
+pushRequest	lsq.cc	/^LSQ::pushRequest(MinorDynInstPtr inst, bool isLoad, uint8_t *data,$/;"	f	class:Minor::LSQ
+pushTail	buffers.hh	/^    pushTail() const$/;"	f	class:Minor::InputBuffer
+pushWire	buffers.hh	/^    typename TimeBuffer<ElemType>::wire pushWire;$/;"	m	class:Minor::SelfStallingPipeline
+queue	buffers.hh	/^      std::deque<ElemType> queue;$/;"	m	class:Minor::Queue
+queue	buffers.hh	/^    mutable Queue<ElemType, ReportTraits, BubbleTraits> queue;$/;"	m	class:Minor::InputBuffer
+quiesceCycles	stats.hh	/^    Stats::Scalar quiesceCycles;$/;"	m	class:Minor::MinorStats
+readCCRegOperand	exec_context.hh	/^    readCCRegOperand(const StaticInst *si, int idx)$/;"	f	class:Minor::ExecContext
+readFloatRegOperand	exec_context.hh	/^    readFloatRegOperand(const StaticInst *si, int idx)$/;"	f	class:Minor::ExecContext
+readFloatRegOperandBits	exec_context.hh	/^    readFloatRegOperandBits(const StaticInst *si, int idx)$/;"	f	class:Minor::ExecContext
+readIntRegOperand	exec_context.hh	/^    readIntRegOperand(const StaticInst *si, int idx)$/;"	f	class:Minor::ExecContext
+readMem	exec_context.hh	/^    readMem(Addr addr, uint8_t *data, unsigned int size,$/;"	f	class:Minor::ExecContext
+readMiscReg	exec_context.hh	/^    readMiscReg(int misc_reg)$/;"	f	class:Minor::ExecContext
+readMiscRegNoEffect	exec_context.hh	/^    readMiscRegNoEffect(int misc_reg) const$/;"	f	class:Minor::ExecContext
+readMiscRegOperand	exec_context.hh	/^    readMiscRegOperand(const StaticInst *si, int idx)$/;"	f	class:Minor::ExecContext
+readPredicate	exec_context.hh	/^    readPredicate()$/;"	f	class:Minor::ExecContext
+readRegOtherThread	exec_context.hh	/^    readRegOtherThread(int idx, ThreadID tid = InvalidThreadID)$/;"	f	class:Minor::ExecContext
+readStCondFailures	exec_context.hh	/^    unsigned int readStCondFailures() const { return 0; }$/;"	f	class:Minor::ExecContext
+reason	pipe_data.hh	/^    Reason reason;$/;"	m	class:Minor::BranchData
+recvReqRetry	fetch1.cc	/^Fetch1::recvReqRetry()$/;"	f	class:Minor::Fetch1
+recvReqRetry	fetch1.hh	/^        void recvReqRetry() { fetch.recvReqRetry(); }$/;"	f	class:Minor::Fetch1::IcachePort
+recvReqRetry	lsq.cc	/^LSQ::recvReqRetry()$/;"	f	class:Minor::LSQ
+recvReqRetry	lsq.hh	/^        void recvReqRetry() { lsq.recvReqRetry(); }$/;"	f	class:Minor::LSQ::DcachePort
+recvTimingResp	fetch1.cc	/^Fetch1::recvTimingResp(PacketPtr response)$/;"	f	class:Minor::Fetch1
+recvTimingResp	fetch1.hh	/^        bool recvTimingResp(PacketPtr pkt)$/;"	f	class:Minor::Fetch1::IcachePort
+recvTimingResp	lsq.cc	/^LSQ::recvTimingResp(PacketPtr response)$/;"	f	class:Minor::LSQ
+recvTimingResp	lsq.hh	/^        bool recvTimingResp(PacketPtr pkt)$/;"	f	class:Minor::LSQ::DcachePort
+recvTimingSnoopReq	cpu.hh	/^        virtual void recvTimingSnoopReq(PacketPtr pkt) { }$/;"	f	class:MinorCPU::MinorCPUPort
+recvTimingSnoopReq	lsq.cc	/^LSQ::recvTimingSnoopReq(PacketPtr pkt)$/;"	f	class:Minor::LSQ
+recvTimingSnoopReq	lsq.hh	/^        void recvTimingSnoopReq(PacketPtr pkt)$/;"	f	class:Minor::LSQ::DcachePort
+regStats	cpu.cc	/^MinorCPU::regStats()$/;"	f	class:MinorCPU
+regStats	stats.cc	/^MinorStats::regStats(const std::string &name, BaseCPU &baseCpu)$/;"	f	class:Minor::MinorStats
+remainingSpace	buffers.hh	/^    remainingSpace() const$/;"	f	class:Minor::Queue
+renjuminorTraceInst	dyn_inst.cc	/^MinorDynInst::renjuminorTraceInst(const Named &named_object) const$/;"	f	class:Minor::MinorDynInst
+reportData	buffers.hh	/^    reportData(std::ostream &os, const ElemType &elem)$/;"	f	class:Minor::ReportTraitsAdaptor
+reportData	buffers.hh	/^    reportData(std::ostream &os, const PtrType &elem)$/;"	f	class:Minor::ReportTraitsPtrAdaptor
+reportData	dyn_inst.cc	/^MinorDynInst::reportData(std::ostream &os) const$/;"	f	class:Minor::MinorDynInst
+reportData	fetch1.cc	/^Fetch1::FetchRequest::reportData(std::ostream &os) const$/;"	f	class:Minor::Fetch1::FetchRequest
+reportData	func_unit.cc	/^QueuedInst::reportData(std::ostream &os) const$/;"	f	class:Minor::QueuedInst
+reportData	lsq.cc	/^LSQ::LSQRequest::reportData(std::ostream &os) const$/;"	f	class:Minor::LSQ::LSQRequest
+reportData	pipe_data.cc	/^BranchData::reportData(std::ostream &os) const$/;"	f	class:Minor::BranchData
+reportData	pipe_data.cc	/^ForwardInstData::reportData(std::ostream &os) const$/;"	f	class:Minor::ForwardInstData
+reportData	pipe_data.cc	/^ForwardLineData::reportData(std::ostream &os) const$/;"	f	class:Minor::ForwardLineData
+reportLeft	buffers.hh	/^    int reportLeft, reportRight;$/;"	m	class:Minor::MinorBuffer
+reportRight	buffers.hh	/^    int reportLeft, reportRight;$/;"	m	class:Minor::MinorBuffer
+request	fetch1.hh	/^        Request request;$/;"	m	class:Minor::Fetch1::FetchRequest
+request	lsq.hh	/^        Request request;$/;"	m	class:Minor::LSQ::LSQRequest
+requests	fetch1.hh	/^    FetchQueue requests;$/;"	m	class:Minor::Fetch1
+requests	lsq.hh	/^    LSQQueue requests;$/;"	m	class:Minor::LSQ
+require_caches	MinorCPU.py	/^    def require_caches(cls):$/;"	m	class:MinorCPU
+res	lsq.hh	/^        uint64_t *res;$/;"	m	class:Minor::LSQ::LSQRequest
+reserve	buffers.hh	/^    reserve()$/;"	f	class:Minor::Queue
+reserve	buffers.hh	/^    void reserve() { queue.reserve(); }$/;"	f	class:Minor::InputBuffer
+reservedSpace	buffers.hh	/^    unsigned int reservedSpace() const { return numReservedSlots; }$/;"	f	class:Minor::Queue
+resize	pipe_data.cc	/^ForwardInstData::resize(unsigned int width)$/;"	f	class:Minor::ForwardInstData
+retireResponse	lsq.cc	/^LSQ::SingleDataRequest::retireResponse(PacketPtr packet_)$/;"	f	class:Minor::LSQ::SingleDataRequest
+retireResponse	lsq.cc	/^LSQ::SplitDataRequest::retireResponse(PacketPtr response)$/;"	f	class:Minor::LSQ::SplitDataRequest
+retireResponse	lsq.hh	/^        void retireResponse(PacketPtr packet_) { }$/;"	f	class:Minor::LSQ::SpecialDataRequest
+retryRequest	lsq.hh	/^    LSQRequestPtr retryRequest;$/;"	m	class:Minor::LSQ
+returnCycle	scoreboard.hh	/^    std::vector<Cycles> returnCycle;$/;"	m	class:Minor::Scoreboard
+scoreboard	execute.hh	/^    Scoreboard scoreboard;$/;"	m	class:Minor::Execute
+sendNextFragmentToTranslation	lsq.cc	/^LSQ::SplitDataRequest::sendNextFragmentToTranslation()$/;"	f	class:Minor::LSQ::SplitDataRequest
+sendStoreToStoreBuffer	lsq.cc	/^LSQ::sendStoreToStoreBuffer(LSQRequestPtr request)$/;"	f	class:Minor::LSQ
+sentAllPackets	lsq.hh	/^        bool sentAllPackets() { return numIssuedFragments == numFragments; }$/;"	f	class:Minor::LSQ::SplitDataRequest
+sentAllPackets	lsq.hh	/^        bool sentAllPackets() { return packetSent; }$/;"	f	class:Minor::LSQ::SingleDataRequest
+sentAllPackets	lsq.hh	/^        bool sentAllPackets() { return true; }$/;"	f	class:Minor::LSQ::SpecialDataRequest
+serialize	cpu.cc	/^MinorCPU::serialize(CheckpointOut &cp) const$/;"	f	class:MinorCPU
+serializeThread	cpu.cc	/^MinorCPU::serializeThread(CheckpointOut &cp, ThreadID thread_id) const$/;"	f	class:MinorCPU
+setCCRegOperand	exec_context.hh	/^    setCCRegOperand(const StaticInst *si, int idx, TheISA::CCReg val)$/;"	f	class:Minor::ExecContext
+setDrainState	execute.cc	/^Execute::setDrainState(DrainState state)$/;"	f	class:Minor::Execute
+setEA	exec_context.hh	/^    void setEA(Addr ea)$/;"	f	class:Minor::ExecContext
+setFault	pipe_data.cc	/^ForwardLineData::setFault(Fault fault_)$/;"	f	class:Minor::ForwardLineData
+setFloatRegOperand	exec_context.hh	/^    setFloatRegOperand(const StaticInst *si, int idx,$/;"	f	class:Minor::ExecContext
+setFloatRegOperandBits	exec_context.hh	/^    setFloatRegOperandBits(const StaticInst *si, int idx,$/;"	f	class:Minor::ExecContext
+setIntRegOperand	exec_context.hh	/^    setIntRegOperand(const StaticInst *si, int idx, IntReg val)$/;"	f	class:Minor::ExecContext
+setMiscReg	exec_context.hh	/^    setMiscReg(int misc_reg, const TheISA::MiscReg &val)$/;"	f	class:Minor::ExecContext
+setMiscRegOperand	exec_context.hh	/^    setMiscRegOperand(const StaticInst *si, int idx,$/;"	f	class:Minor::ExecContext
+setPredicate	exec_context.hh	/^    setPredicate(bool val)$/;"	f	class:Minor::ExecContext
+setRegOtherThread	exec_context.hh	/^    setRegOtherThread(int idx, const TheISA::MiscReg &val,$/;"	f	class:Minor::ExecContext
+setSkipped	lsq.hh	/^        void setSkipped() { skipped = true; }$/;"	f	class:Minor::LSQ::LSQRequest
+setStCondFailures	exec_context.hh	/^    void setStCondFailures(unsigned int st_cond_failures) {}$/;"	f	class:Minor::ExecContext
+setState	lsq.cc	/^LSQ::LSQRequest::setState(LSQRequestState new_state)$/;"	f	class:Minor::LSQ::LSQRequest
+setTail	buffers.hh	/^    setTail(ElemType &new_element)$/;"	f	class:Minor::InputBuffer
+setTraceTimeOnCommit	execute.hh	/^    bool setTraceTimeOnCommit;$/;"	m	class:Minor::Execute
+setTraceTimeOnIssue	execute.hh	/^    bool setTraceTimeOnIssue;$/;"	m	class:Minor::Execute
+signalDrainDone	cpu.cc	/^MinorCPU::signalDrainDone()$/;"	f	class:MinorCPU
+simPalCheck	exec_context.hh	/^    simPalCheck(int palFunc)$/;"	f	class:Minor::ExecContext
+skipped	lsq.hh	/^        bool skipped;$/;"	m	class:Minor::LSQ::LSQRequest
+skippedMemAccess	lsq.hh	/^        bool skippedMemAccess() { return skipped; }$/;"	f	class:Minor::LSQ::LSQRequest
+slots	lsq.hh	/^        std::deque<LSQRequestPtr> slots;$/;"	m	class:Minor::LSQ::StoreBuffer
+srcRegsRelativeLats	MinorCPU.py	/^        srcRegsRelativeLats=[0])]$/;"	v	class:MinorDefaultIntMulFU
+srcRegsRelativeLats	MinorCPU.py	/^        srcRegsRelativeLats=[2])]$/;"	v	class:MinorDefaultFloatSimdFU
+srcRegsRelativeLats	MinorCPU.py	/^        srcRegsRelativeLats=[2])]$/;"	v	class:MinorDefaultIntFU
+srcRegsRelativeLats	MinorCPU.py	/^    srcRegsRelativeLats = VectorParam.Cycles("the maximum number of cycles"$/;"	v	class:MinorFUTiming
+srcRegsRelativeLats	func_unit.hh	/^    std::vector<Cycles> srcRegsRelativeLats;$/;"	m	class:MinorFUTiming
+stalled	buffers.hh	/^    bool stalled;$/;"	m	class:Minor::SelfStallingPipeline
+startAddrTranslation	lsq.cc	/^LSQ::SingleDataRequest::startAddrTranslation()$/;"	f	class:Minor::LSQ::SingleDataRequest
+startAddrTranslation	lsq.cc	/^LSQ::SplitDataRequest::startAddrTranslation()$/;"	f	class:Minor::LSQ::SplitDataRequest
+startAddrTranslation	lsq.hh	/^        void startAddrTranslation() { }$/;"	f	class:Minor::LSQ::SpecialDataRequest
+startup	cpu.cc	/^MinorCPU::startup()$/;"	f	class:MinorCPU
+state	fetch1.hh	/^        FetchRequestState state;$/;"	m	class:Minor::Fetch1::FetchRequest
+state	fetch1.hh	/^    FetchState state;$/;"	m	class:Minor::Fetch1
+state	lsq.hh	/^        LSQRequestState state;$/;"	m	class:Minor::LSQ::LSQRequest
+state	lsq.hh	/^    MemoryState state;$/;"	m	class:Minor::LSQ
+staticInst	dyn_inst.hh	/^    StaticInstPtr staticInst;$/;"	m	class:Minor::MinorDynInst
+stats	cpu.hh	/^    Minor::MinorStats stats;$/;"	m	class:MinorCPU
+step	lsq.cc	/^LSQ::StoreBuffer::step()$/;"	f	class:Minor::LSQ::StoreBuffer
+step	lsq.cc	/^LSQ::step()$/;"	f	class:Minor::LSQ
+stepQueues	fetch1.cc	/^Fetch1::stepQueues()$/;"	f	class:Minor::Fetch1
+stepToNextPacket	lsq.cc	/^LSQ::SplitDataRequest::stepToNextPacket()$/;"	f	class:Minor::LSQ::SplitDataRequest
+stepToNextPacket	lsq.hh	/^        void stepToNextPacket() { packetInFlight = true; packetSent = true; }$/;"	f	class:Minor::LSQ::SingleDataRequest
+stepToNextPacket	lsq.hh	/^        void stepToNextPacket() { }$/;"	f	class:Minor::LSQ::SpecialDataRequest
+storeBuffer	lsq.hh	/^    StoreBuffer storeBuffer;$/;"	m	class:Minor::LSQ
+storeLimitPerCycle	lsq.hh	/^        const unsigned int storeLimitPerCycle;$/;"	m	class:Minor::LSQ::StoreBuffer
+streamSeqNum	dyn_inst.hh	/^    InstSeqNum streamSeqNum;$/;"	m	class:Minor::InstId
+streamSeqNum	execute.hh	/^    InstSeqNum streamSeqNum;$/;"	m	class:Minor::Execute
+streamSeqNum	fetch1.hh	/^    InstSeqNum streamSeqNum;$/;"	m	class:Minor::Fetch1
+support_take_over	MinorCPU.py	/^    def support_take_over(cls):$/;"	m	class:MinorCPU
+suppress	MinorCPU.py	/^    suppress = Param.Bool(False, "if true, this inst. is not executed by"$/;"	v	class:MinorFUTiming
+suppress	func_unit.hh	/^    bool suppress;$/;"	m	class:MinorFUTiming
+suspendContext	cpu.cc	/^MinorCPU::suspendContext(ThreadID thread_id)$/;"	f	class:MinorCPU
+switchOut	cpu.cc	/^MinorCPU::switchOut()$/;"	f	class:MinorCPU
+syscall	exec_context.hh	/^    syscall(int64_t callnum)$/;"	f	class:Minor::ExecContext
+takeInterrupt	execute.cc	/^Execute::takeInterrupt(ThreadID thread_id, BranchData &branch)$/;"	f	class:Minor::Execute
+takeOverFrom	cpu.cc	/^MinorCPU::takeOverFrom(BaseCPU *old_cpu)$/;"	f	class:MinorCPU
+target	pipe_data.hh	/^    TheISA::PCState target;$/;"	m	class:Minor::BranchData
+tcBase	exec_context.hh	/^    ThreadContext *tcBase() { return thread.getTC(); }$/;"	f	class:Minor::ExecContext
+thread	exec_context.hh	/^    SimpleThread &thread;$/;"	m	class:Minor::ExecContext
+threadId	dyn_inst.hh	/^    ThreadID threadId;$/;"	m	class:Minor::InstId
+threads	cpu.hh	/^    std::vector<Minor::MinorThread *> threads;$/;"	m	class:MinorCPU
+timeSource	func_unit.hh	/^    ClockedObject &timeSource;$/;"	m	class:Minor::FUPipeline
+timings	MinorCPU.py	/^    timings = VectorParam.MinorFUTiming([], "extra decoding rules")$/;"	v	class:MinorFU
+timings	MinorCPU.py	/^    timings = [MinorFUTiming(description="Int",$/;"	v	class:MinorDefaultIntFU
+timings	MinorCPU.py	/^    timings = [MinorFUTiming(description='FloatSimd',$/;"	v	class:MinorDefaultFloatSimdFU
+timings	MinorCPU.py	/^    timings = [MinorFUTiming(description='Mem',$/;"	v	class:MinorDefaultMemFU
+timings	MinorCPU.py	/^    timings = [MinorFUTiming(description='Mul',$/;"	v	class:MinorDefaultIntMulFU
+timings	func_unit.hh	/^    std::vector<MinorFUTiming *> timings;$/;"	m	class:MinorFU
+totalInsts	cpu.cc	/^MinorCPU::totalInsts() const$/;"	f	class:MinorCPU
+totalOps	cpu.cc	/^MinorCPU::totalOps() const$/;"	f	class:MinorCPU
+totalSpace	buffers.hh	/^    unsigned int totalSpace() const { return capacity; }$/;"	f	class:Minor::Queue
+traceData	dyn_inst.hh	/^    Trace::InstRecord *traceData;$/;"	m	class:Minor::MinorDynInst
+transferNeedsBurst	lsq.cc	/^transferNeedsBurst(Addr addr, unsigned int size, unsigned int block_size)$/;"	f	namespace:Minor
+transfers	fetch1.hh	/^    FetchQueue transfers;$/;"	m	class:Minor::Fetch1
+transfers	lsq.hh	/^    LSQQueue transfers;$/;"	m	class:Minor::LSQ
+translationEvent	lsq.hh	/^        TranslationEvent translationEvent;$/;"	m	class:Minor::LSQ::SplitDataRequest
+triedToPredict	dyn_inst.hh	/^    bool triedToPredict;$/;"	m	class:Minor::MinorDynInst
+tryPCEvents	execute.cc	/^Execute::tryPCEvents()$/;"	f	class:Minor::Execute
+tryToBranch	execute.cc	/^Execute::tryToBranch(MinorDynInstPtr inst, Fault fault, BranchData &branch)$/;"	f	class:Minor::Execute
+tryToSend	fetch1.cc	/^Fetch1::tryToSend(FetchRequestPtr request)$/;"	f	class:Minor::Fetch1
+tryToSend	lsq.cc	/^LSQ::tryToSend(LSQRequestPtr request)$/;"	f	class:Minor::LSQ
+tryToSendToTransfers	fetch1.cc	/^Fetch1::tryToSendToTransfers(FetchRequestPtr request)$/;"	f	class:Minor::Fetch1
+tryToSendToTransfers	lsq.cc	/^LSQ::tryToSendToTransfers(LSQRequestPtr request)$/;"	f	class:Minor::LSQ
+type	MinorCPU.py	/^    type = 'MinorCPU'$/;"	v	class:MinorCPU
+type	MinorCPU.py	/^    type = 'MinorFU'$/;"	v	class:MinorFU
+type	MinorCPU.py	/^    type = 'MinorFUPool'$/;"	v	class:MinorFUPool
+type	MinorCPU.py	/^    type = 'MinorFUTiming'$/;"	v	class:MinorFUTiming
+type	MinorCPU.py	/^    type = 'MinorOpClass'$/;"	v	class:MinorOpClass
+type	MinorCPU.py	/^    type = 'MinorOpClassSet'$/;"	v	class:MinorOpClassSet
+unreservedRemainingSpace	buffers.hh	/^    unreservedRemainingSpace() const$/;"	f	class:Minor::Queue
+unreservedRemainingSpace	buffers.hh	/^    unreservedRemainingSpace()$/;"	f	class:Minor::InputBuffer
+unserialize	cpu.cc	/^MinorCPU::unserialize(CheckpointIn &cp)$/;"	f	class:MinorCPU
+unserializeThread	cpu.cc	/^MinorCPU::unserializeThread(CheckpointIn &cp, ThreadID thread_id)$/;"	f	class:MinorCPU
+updateBranchData	execute.cc	/^Execute::updateBranchData($/;"	f	class:Minor::Execute
+updateBranchPrediction	fetch2.cc	/^Fetch2::updateBranchPrediction(const BranchData &branch)$/;"	f	class:Minor::Fetch2
+updateExpectedSeqNums	fetch1.cc	/^Fetch1::updateExpectedSeqNums(const BranchData &branch)$/;"	f	class:Minor::Fetch1
+wakeup	cpu.cc	/^MinorCPU::wakeup()$/;"	f	class:MinorCPU
+wakeupFetch	execute.cc	/^Execute::wakeupFetch(BranchData::Reason reason)$/;"	f	class:Minor::Execute
+wakeupFetch	pipeline.cc	/^Pipeline::wakeupFetch()$/;"	f	class:Minor::Pipeline
+wakeupOnEvent	cpu.cc	/^MinorCPU::wakeupOnEvent(unsigned int stage_id)$/;"	f	class:MinorCPU
+width	pipe_data.hh	/^    unsigned int width() const { return numInsts; }$/;"	f	class:Minor::ForwardInstData
+writeMem	exec_context.hh	/^    writeMem(uint8_t *data, unsigned int size, Addr addr,$/;"	f	class:Minor::ExecContext
+writingInst	scoreboard.hh	/^    std::vector<InstSeqNum> writingInst;$/;"	m	class:Minor::Scoreboard
+~Execute	execute.cc	/^Execute::~Execute()$/;"	f	class:Minor::Execute
+~FetchRequest	fetch1.cc	/^Fetch1::FetchRequest::~FetchRequest()$/;"	f	class:Minor::Fetch1::FetchRequest
+~ForwardLineData	pipe_data.hh	/^    ~ForwardLineData() { line = NULL; }$/;"	f	class:Minor::ForwardLineData
+~LSQ	lsq.cc	/^LSQ::~LSQ()$/;"	f	class:Minor::LSQ
+~LSQRequest	lsq.cc	/^LSQ::LSQRequest::~LSQRequest()$/;"	f	class:Minor::LSQ::LSQRequest
+~MinorCPU	cpu.cc	/^MinorCPU::~MinorCPU()$/;"	f	class:MinorCPU
+~MinorDynInst	dyn_inst.cc	/^MinorDynInst::~MinorDynInst()$/;"	f	class:Minor::MinorDynInst
+~Queue	buffers.hh	/^    virtual ~Queue() { }$/;"	f	class:Minor::Queue
+~ReportIF	buffers.hh	/^    virtual ~ReportIF() { }$/;"	f	class:Minor::ReportIF
+~SplitDataRequest	lsq.cc	/^LSQ::SplitDataRequest::~SplitDataRequest()$/;"	f	class:Minor::LSQ::SplitDataRequest
