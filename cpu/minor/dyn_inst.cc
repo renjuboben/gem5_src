@@ -224,4 +224,63 @@ MinorDynInst::~MinorDynInst()
         delete traceData;
 }
 
+//renju_begin
+void
+MinorDynInst::renjuminorTraceInst(const Named &named_object) const
+{
+    if (isFault()) {
+        RENJUMINORINST(&named_object, "id=F;%s addr=0x%x fault=\"%s\"\n",
+            id, pc.instAddr(), fault->name());
+    } else {
+        unsigned int num_src_regs = staticInst->numSrcRegs();
+        unsigned int num_dest_regs = staticInst->numDestRegs();
+
+        std::ostringstream regs_str;
+
+        /* Format lists of src and dest registers for microops and
+         *  'full' instructions */
+        if (!staticInst->isMacroop()) {
+            regs_str << " srcRegs=";
+
+            unsigned int src_reg = 0;
+            while (src_reg < num_src_regs) {
+                printRegName(regs_str, staticInst->srcRegIdx(src_reg));
+
+                src_reg++;
+                if (src_reg != num_src_regs)
+                    regs_str << ',';
+            }
+
+            regs_str << " destRegs=";
+
+            unsigned int dest_reg = 0;
+            while (dest_reg < num_dest_regs) {
+                printRegName(regs_str, staticInst->destRegIdx(dest_reg));
+
+                dest_reg++;
+                if (dest_reg != num_dest_regs)
+                    regs_str << ',';
+            }
+
+#if THE_ISA == ARM_ISA
+            regs_str << " extMachInst=" << std::hex << std::setw(16)
+                << std::setfill('0') << staticInst->machInst << std::dec;
+#endif
+        }
+
+        std::ostringstream flags;
+        staticInst->printFlags(flags, " ");
+
+        RENJUMINORINST(&named_object, "id=%s addr=0x%x inst=\"%s\" class=%s"
+            " flags=\"%s\"%s%s\n",
+            id, pc.instAddr(),
+            (staticInst->opClass() == No_OpClass ?
+                "(invalid)" : staticInst->disassemble(0,NULL)),
+            Enums::OpClassStrings[staticInst->opClass()],
+            flags.str(),
+            regs_str.str(),
+            (predictedTaken ? " predictedTaken" : ""));
+    }
+}
+//renju_end
 }

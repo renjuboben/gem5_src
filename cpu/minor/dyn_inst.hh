@@ -268,6 +268,10 @@ class MinorDynInst : public RefCounted
      *  MinorTrace using the given Named object's name */
     void minorTraceInst(const Named &named_object) const;
 
+    /** Print (possibly verbose) instruction information for
+     *  MinorTrace using the given Named object's name */
+    void renjuminorTraceInst(const Named &named_object) const;
+
     /** ReportIF interface */
     void reportData(std::ostream &os) const;
 

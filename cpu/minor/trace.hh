@@ -54,6 +54,8 @@
 
 #include "base/trace.hh"
 #include "debug/MinorTrace.hh"
+//renju
+#include "debug/renju.hh"
 
 namespace Minor
 {
@@ -70,6 +72,23 @@ namespace Minor
 #define MINORLINE(sim_object, ...) \
     DPRINTFS(MinorTrace, (sim_object), "MinorLine: " __VA_ARGS__)
 
+
+
+//renju_begin
+//my version of all the above fucntions
+
+/** DPRINTFN for MinorTrace reporting */
+#define RENJUMINORTRACE(...) \
+    DPRINTF(renju, "RenjuMinorTrace: " __VA_ARGS__)
+
+/** DPRINTFN for MinorTrace MinorInst line reporting */
+#define RENJUMINORINST(sim_object, ...) \
+    DPRINTFS(renju, (sim_object), "RenjuMinorInst: " __VA_ARGS__)
+
+/** DPRINTFN for MinorTrace MinorLine line reporting */
+#define RENJUMINORLINE(sim_object, ...) \
+    DPRINTFS(renju, (sim_object), "RenjuMinorLine: " __VA_ARGS__)
+//renju_end
 }
 
 #endif /* __CPU_MINOR_TRACE_HH__ */

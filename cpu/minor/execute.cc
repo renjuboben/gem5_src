@@ -760,11 +760,13 @@ Execute::issue(bool only_issue_microops)
                 inst->minorTraceInst(*this);
             }
 
-
             //renju
+            //print out the instruction parameters like src, dest registers
             if (DTRACE(renju) && !inst->isBubble()){
+                std::cout << "****************************" << std::endl;
                 inst->renjuminorTraceInst(*this);
             }
+            //renju
  
             /* Mark up barriers in the LSQ */
             if (!discarded && inst->isInst() &&
